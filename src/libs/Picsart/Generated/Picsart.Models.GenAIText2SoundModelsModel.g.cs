@@ -1,0 +1,54 @@
+
+#nullable enable
+
+namespace Picsart
+{
+    /// <summary>
+    /// Optionally choose a specific AI model to use for this audio generation.<br/>
+    /// If not specified, a default model will be applied. Please note that the default model may change over time as Picsart continues to improve performance and accuracy. Any change to the default will be made only after thorough testing and validation to ensure it delivers better results.<br/>
+    /// If you require consistent behavior or wish to evaluate different models on your own, we recommend explicitly setting this parameter.<br/>
+    /// Default Value: urn:air:elevenlabs:model:elevenlabs:elevenlabs-sound-effects-v2@1
+    /// </summary>
+    public enum GenAIText2SoundModelsModel
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        Urn_air_elevenlabs_model_elevenlabs_elevenlabsSoundEffectsV2_1,
+        /// <summary>
+        /// 
+        /// </summary>
+        Urn_air_kling_model_kling_klingTextToAudio_1,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class GenAIText2SoundModelsModelExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this GenAIText2SoundModelsModel value)
+        {
+            return value switch
+            {
+                GenAIText2SoundModelsModel.Urn_air_elevenlabs_model_elevenlabs_elevenlabsSoundEffectsV2_1 => "urn:air:elevenlabs:model:elevenlabs:elevenlabs-sound-effects-v2@1",
+                GenAIText2SoundModelsModel.Urn_air_kling_model_kling_klingTextToAudio_1 => "urn:air:kling:model:kling:kling-text-to-audio@1",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static GenAIText2SoundModelsModel? ToEnum(string value)
+        {
+            return value switch
+            {
+                "urn:air:elevenlabs:model:elevenlabs:elevenlabs-sound-effects-v2@1" => GenAIText2SoundModelsModel.Urn_air_elevenlabs_model_elevenlabs_elevenlabsSoundEffectsV2_1,
+                "urn:air:kling:model:kling:kling-text-to-audio@1" => GenAIText2SoundModelsModel.Urn_air_kling_model_kling_klingTextToAudio_1,
+                _ => null,
+            };
+        }
+    }
+}

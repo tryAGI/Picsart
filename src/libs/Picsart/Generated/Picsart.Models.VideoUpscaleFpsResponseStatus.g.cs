@@ -1,0 +1,63 @@
+
+#nullable enable
+
+namespace Picsart
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum VideoUpscaleFpsResponseStatus
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        Error,
+        /// <summary>
+        /// 
+        /// </summary>
+        Processing,
+        /// <summary>
+        /// 
+        /// </summary>
+        Queued,
+        /// <summary>
+        /// 
+        /// </summary>
+        Success,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class VideoUpscaleFpsResponseStatusExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this VideoUpscaleFpsResponseStatus value)
+        {
+            return value switch
+            {
+                VideoUpscaleFpsResponseStatus.Error => "error",
+                VideoUpscaleFpsResponseStatus.Processing => "processing",
+                VideoUpscaleFpsResponseStatus.Queued => "queued",
+                VideoUpscaleFpsResponseStatus.Success => "success",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static VideoUpscaleFpsResponseStatus? ToEnum(string value)
+        {
+            return value switch
+            {
+                "error" => VideoUpscaleFpsResponseStatus.Error,
+                "processing" => VideoUpscaleFpsResponseStatus.Processing,
+                "queued" => VideoUpscaleFpsResponseStatus.Queued,
+                "success" => VideoUpscaleFpsResponseStatus.Success,
+                _ => null,
+            };
+        }
+    }
+}
