@@ -9,13 +9,6 @@ public partial class PicsartClient
         global::System.Net.Http.HttpClient client,
         global::System.Net.Http.HttpRequestMessage request)
     {
-        // Picsart uses X-Picsart-API-Key header instead of Authorization: Bearer
-        if (request.Headers.Authorization is { Scheme: "Bearer", Parameter: { } apiKey })
-        {
-            request.Headers.Authorization = null;
-            request.Headers.TryAddWithoutValidation("X-Picsart-API-Key", apiKey);
-        }
-
         // Route requests to the correct Picsart sub-API host based on path prefix.
         // The merged spec uses:
         //   /image/* -> https://api.picsart.io/tools/1.0/*
