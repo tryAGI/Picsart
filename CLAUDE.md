@@ -14,7 +14,7 @@ dotnet test src/tests/IntegrationTests/
 
 ## Auth
 
-Bearer token auth (converted to `X-Picsart-API-Key` header via PrepareRequest hook):
+API key auth via `X-Picsart-API-Key` header (native via `--security-scheme`):
 
 ```csharp
 var client = new PicsartClient(apiKey); // PICSART_API_KEY env var
@@ -25,7 +25,7 @@ var client = new PicsartClient(apiKey); // PICSART_API_KEY env var
 - `src/libs/Picsart/openapi.yaml` -- Merged OpenAPI spec from 4 Picsart sub-APIs
 - `src/libs/Picsart/generate.sh` -- Runs autosdk with `--security-scheme ApiKey:Header:X-Picsart-API-Key`
 - `src/libs/Picsart/Generated/` -- **Never edit** -- auto-generated code
-- `src/libs/Picsart/Extensions/PicsartClient.Auth.cs` -- PrepareRequest hook: `Bearer -> X-Picsart-API-Key` + multi-host routing
+- `src/libs/Picsart/Extensions/PicsartClient.Auth.cs` -- Multi-host routing (no longer handles auth)
 - `src/libs/Picsart/Extensions/PicsartClient.Tools.cs` -- MEAI AIFunction tools
 - `src/tests/IntegrationTests/Tests.cs` -- Test helper with API key auth
 - `src/tests/IntegrationTests/Examples/` -- Example tests (also generate docs)
@@ -33,7 +33,7 @@ var client = new PicsartClient(apiKey); // PICSART_API_KEY env var
 
 ## Multi-Host Routing
 
-Picsart has 4 separate API hosts. The merged spec uses path prefixes, and the `PrepareRequest` hook routes requests:
+Picsart has 4 separate API hosts. The merged spec uses path prefixes, and the `PrepareRequest` hook routes requests to the correct host:
 
 | Path Prefix | Target Host | Description |
 |-------------|-------------|-------------|
@@ -46,7 +46,7 @@ Picsart has 4 separate API hosts. The merged spec uses path prefixes, and the `P
 
 - OpenAPI specs merged from 4 sources using `specs/merge_specs.py`
 - Spec fixes applied: integer `enum` on `upscale_factor` removed (caused `int.x2` errors), `VideoUploadParameters.file` made optional
-- Auth: `--security-scheme ApiKey:Header:X-Picsart-API-Key` + PrepareRequest hook for Bearer -> X-Picsart-API-Key conversion
+- Auth: `--security-scheme ApiKey:Header:X-Picsart-API-Key` (native, no runtime hook needed)
 
 ## MEAI Integration
 
