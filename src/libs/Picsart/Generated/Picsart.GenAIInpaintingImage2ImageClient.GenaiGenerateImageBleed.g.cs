@@ -641,7 +641,6 @@ namespace Picsart
         public async global::System.Threading.Tasks.Task<global::Picsart.GenaiGenerateImageBleedResponse> GenaiGenerateImageBleedAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIBleedParameters>
             {
             };
