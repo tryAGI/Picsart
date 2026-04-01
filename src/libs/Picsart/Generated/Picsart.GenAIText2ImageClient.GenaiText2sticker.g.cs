@@ -645,6 +645,7 @@ namespace Picsart
         public async global::System.Threading.Tasks.Task<global::Picsart.GenaiText2stickerResponse> GenaiText2stickerAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.AllOf<global::Picsart.GenAIText2ImageParameters, global::Picsart.GenAIText2StickerModels>
             {
             };

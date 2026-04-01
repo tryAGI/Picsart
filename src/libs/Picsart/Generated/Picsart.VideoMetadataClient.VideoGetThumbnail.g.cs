@@ -643,6 +643,7 @@ namespace Picsart
         public async global::System.Threading.Tasks.Task<global::Picsart.VideoGetThumbnailResponse> VideoGetThumbnailAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.AllOf<global::Picsart.VideoVideoParameters, global::Picsart.VideoVideoGetThumbnailParameters>
             {
             };

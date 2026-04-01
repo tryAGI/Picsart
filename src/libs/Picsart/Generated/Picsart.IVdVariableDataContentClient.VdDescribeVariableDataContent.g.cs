@@ -19,9 +19,25 @@ namespace Picsart
         /// Describe Replay's Variable Data<br/>
         /// Describes the Replay. Lists all variable data fields and their types: image, text, etc.
         /// </summary>
+        /// <param name="templateId">
+        /// Source template ID from Picsart Inventory. (If this parameter is present, the other template source parameters must be empty.)
+        /// </param>
+        /// <param name="template">
+        /// Source replay file (binary). (If this parameter is present, the other template source parameters must be empty.)
+        /// </param>
+        /// <param name="templatename">
+        /// Source replay file (binary). (If this parameter is present, the other template source parameters must be empty.)
+        /// </param>
+        /// <param name="templateUrl">
+        /// Source replay URL. (If this parameter is present, the other template source parameters must be empty.)
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.VdDescribeVariableDataContentResponse> VdDescribeVariableDataContentAsync(
+            string? templateId = default,
+            byte[]? template = default,
+            string? templatename = default,
+            string? templateUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

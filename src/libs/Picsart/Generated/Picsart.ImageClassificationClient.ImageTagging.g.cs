@@ -1,6 +1,8 @@
 
 #nullable enable
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 namespace Picsart
 {
     public partial class ImageClassificationClient
@@ -69,6 +71,33 @@ namespace Picsart
                 }
             }
             using var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
+            if (request.Image != default)
+            {
+
+                var __contentImage = new global::System.Net.Http.ByteArrayContent(request.Image ?? global::System.Array.Empty<byte>());
+                __httpRequestContent.Add(
+                    content: __contentImage,
+                    name: "\"image\"",
+                    fileName: request.Imagename != null ? $"\"{request.Imagename}\"" : string.Empty);
+                if (__contentImage.Headers.ContentDisposition != null)
+                {
+                    __contentImage.Headers.ContentDisposition.FileNameStar = null;
+                }
+            } 
+            if (request.ImageUrl != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.ImageUrl}"),
+                    name: "\"image_url\"");
+            } 
+            if (request.ImageId != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.ImageId}"),
+                    name: "\"image_id\"");
+            }
             __httpRequest.Content = __httpRequestContent;
 
             PrepareRequest(
@@ -674,13 +703,29 @@ namespace Picsart
         /// Image Tagging<br/>
         /// This tagging service analyzes the image and suggests hashtags that are relevant to the content.
         /// </summary>
+        /// <param name="image">
+        /// Source image file (binary). (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
+        /// <param name="imagename">
+        /// Source image file (binary). (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
+        /// <param name="imageUrl">
+        /// Source image URL. (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Picsart.ImageTaggingResponse> ImageTaggingAsync(
+            byte[]? image = default,
+            string? imagename = default,
+            string? imageUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.ImageImageParameters
             {
+                Image = image,
+                Imagename = imagename,
+                ImageUrl = imageUrl,
             };
 
             return await ImageTaggingAsync(

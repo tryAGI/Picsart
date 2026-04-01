@@ -69,6 +69,13 @@ namespace Picsart
                 }
             }
             using var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
+            if (request.VideoUrl != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.VideoUrl}"),
+                    name: "\"video_url\"");
+            }
             __httpRequest.Content = __httpRequestContent;
 
             PrepareRequest(
@@ -674,13 +681,19 @@ namespace Picsart
         /// Video FPS Upscale<br/>
         /// Upscale your low FPS videos to 60FPS high-quality videos using Generative AI technology.
         /// </summary>
+        /// <param name="videoUrl">
+        /// Source video URL.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Picsart.VideoUpscaleFpsResponse> VideoUpscaleFpsAsync(
+            string? videoUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.VideoVideoParameters
             {
+                VideoUrl = videoUrl,
             };
 
             return await VideoUpscaleFpsAsync(

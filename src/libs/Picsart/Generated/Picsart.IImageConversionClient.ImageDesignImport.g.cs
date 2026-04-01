@@ -29,9 +29,21 @@ namespace Picsart
         ///   * AI (Adobe Illustrator)<br/>
         ///   * SVG (Scalable Vector Graphics)
         /// </summary>
+        /// <param name="file">
+        /// Source file (binary). (If this parameter is present, the other source parameters must be empty.)
+        /// </param>
+        /// <param name="filename">
+        /// Source file (binary). (If this parameter is present, the other source parameters must be empty.)
+        /// </param>
+        /// <param name="fileUrl">
+        /// Source file URL. (If this parameter is present, the other source parameters must be empty.)
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageDesignImportResponse> ImageDesignImportAsync(
+            byte[]? file = default,
+            string? filename = default,
+            string? fileUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

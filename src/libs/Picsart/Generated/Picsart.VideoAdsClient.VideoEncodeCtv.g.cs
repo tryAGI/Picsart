@@ -640,13 +640,19 @@ namespace Picsart
         /// Make Video CTV-Compatible<br/>
         /// Converts your original video to meet &lt;a href="https://docs.picsart.io/docs/ctv-ads-format-requirements/"&gt;CTV requirements&lt;/a&gt;.
         /// </summary>
+        /// <param name="videoUrl">
+        /// Source video URL.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Picsart.VideoEncodeCtvResponse> VideoEncodeCtvAsync(
+            string? videoUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.VideoVideoParameters
             {
+                VideoUrl = videoUrl,
             };
 
             return await VideoEncodeCtvAsync(

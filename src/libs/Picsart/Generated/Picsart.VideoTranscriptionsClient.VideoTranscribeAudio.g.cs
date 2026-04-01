@@ -661,6 +661,7 @@ namespace Picsart
         public async global::System.Threading.Tasks.Task<global::Picsart.VideoTranscribeAudioResponse> VideoTranscribeAudioAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.AllOf<global::Picsart.VideoTranscribeFileParameters, global::Picsart.VideoTranscribeParameters>
             {
             };
