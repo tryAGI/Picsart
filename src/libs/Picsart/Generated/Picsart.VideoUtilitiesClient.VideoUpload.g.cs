@@ -69,6 +69,19 @@ namespace Picsart
                 }
             }
             using var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
+            if (request.File != default)
+            {
+
+                var __contentFile = new global::System.Net.Http.ByteArrayContent(request.File ?? global::System.Array.Empty<byte>());
+                __httpRequestContent.Add(
+                    content: __contentFile,
+                    name: "\"file\"",
+                    fileName: request.Filename != null ? $"\"{request.Filename}\"" : string.Empty);
+                if (__contentFile.Headers.ContentDisposition != null)
+                {
+                    __contentFile.Headers.ContentDisposition.FileNameStar = null;
+                }
+            }
             __httpRequest.Content = __httpRequestContent;
 
             PrepareRequest(
@@ -598,13 +611,24 @@ namespace Picsart
         /// Upload files<br/>
         /// Upload resources such as videos, audios or images. The provided URL can be passed as inputs to video operation.
         /// </summary>
+        /// <param name="file">
+        /// Source file (binary).
+        /// </param>
+        /// <param name="filename">
+        /// Source file (binary).
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Picsart.VideoUploadResponse> VideoUploadAsync(
+            byte[]? file = default,
+            string? filename = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.VideoUploadParameters
             {
+                File = file,
+                Filename = filename,
             };
 
             return await VideoUploadAsync(

@@ -74,6 +74,26 @@ namespace Picsart
                 }
             }
             using var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
+            if (request.File != default)
+            {
+
+                var __contentFile = new global::System.Net.Http.ByteArrayContent(request.File ?? global::System.Array.Empty<byte>());
+                __httpRequestContent.Add(
+                    content: __contentFile,
+                    name: "\"file\"",
+                    fileName: request.Filename != null ? $"\"{request.Filename}\"" : string.Empty);
+                if (__contentFile.Headers.ContentDisposition != null)
+                {
+                    __contentFile.Headers.ContentDisposition.FileNameStar = null;
+                }
+            } 
+            if (request.FileUrl != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.FileUrl}"),
+                    name: "\"file_url\"");
+            }
             __httpRequest.Content = __httpRequestContent;
 
             PrepareRequest(
@@ -684,13 +704,29 @@ namespace Picsart
         ///   * AI (Adobe Illustrator)<br/>
         ///   * SVG (Scalable Vector Graphics)
         /// </summary>
+        /// <param name="file">
+        /// Source file (binary). (If this parameter is present, the other source parameters must be empty.)
+        /// </param>
+        /// <param name="filename">
+        /// Source file (binary). (If this parameter is present, the other source parameters must be empty.)
+        /// </param>
+        /// <param name="fileUrl">
+        /// Source file URL. (If this parameter is present, the other source parameters must be empty.)
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Picsart.ImageDesignImportResponse> ImageDesignImportAsync(
+            byte[]? file = default,
+            string? filename = default,
+            string? fileUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.ImageFileParameters
             {
+                File = file,
+                Filename = filename,
+                FileUrl = fileUrl,
             };
 
             return await ImageDesignImportAsync(

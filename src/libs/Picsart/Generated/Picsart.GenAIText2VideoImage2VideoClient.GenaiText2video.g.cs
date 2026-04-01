@@ -647,6 +647,7 @@ namespace Picsart
         public async global::System.Threading.Tasks.Task<global::Picsart.GenaiText2videoResponse> GenaiText2videoAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.AllOf<global::Picsart.GenAIText2VideoParameters, global::Picsart.GenAIText2VideoModels>
             {
             };

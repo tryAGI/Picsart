@@ -69,6 +69,33 @@ namespace Picsart
                 }
             }
             using var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
+            if (request.TemplateId != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.TemplateId}"),
+                    name: "\"template_id\"");
+            } 
+            if (request.Template != default)
+            {
+
+                var __contentTemplate = new global::System.Net.Http.ByteArrayContent(request.Template ?? global::System.Array.Empty<byte>());
+                __httpRequestContent.Add(
+                    content: __contentTemplate,
+                    name: "\"template\"",
+                    fileName: request.Templatename != null ? $"\"{request.Templatename}\"" : string.Empty);
+                if (__contentTemplate.Headers.ContentDisposition != null)
+                {
+                    __contentTemplate.Headers.ContentDisposition.FileNameStar = null;
+                }
+            } 
+            if (request.TemplateUrl != default)
+            {
+
+                __httpRequestContent.Add(
+                    content: new global::System.Net.Http.StringContent($"{request.TemplateUrl}"),
+                    name: "\"template_url\"");
+            }
             __httpRequest.Content = __httpRequestContent;
 
             PrepareRequest(
@@ -674,13 +701,34 @@ namespace Picsart
         /// Describe Replay's Variable Data<br/>
         /// Describes the Replay. Lists all variable data fields and their types: image, text, etc.
         /// </summary>
+        /// <param name="templateId">
+        /// Source template ID from Picsart Inventory. (If this parameter is present, the other template source parameters must be empty.)
+        /// </param>
+        /// <param name="template">
+        /// Source replay file (binary). (If this parameter is present, the other template source parameters must be empty.)
+        /// </param>
+        /// <param name="templatename">
+        /// Source replay file (binary). (If this parameter is present, the other template source parameters must be empty.)
+        /// </param>
+        /// <param name="templateUrl">
+        /// Source replay URL. (If this parameter is present, the other template source parameters must be empty.)
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Picsart.VdDescribeVariableDataContentResponse> VdDescribeVariableDataContentAsync(
+            string? templateId = default,
+            byte[]? template = default,
+            string? templatename = default,
+            string? templateUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Picsart.VDTemplateParameters
             {
+                TemplateId = templateId,
+                Template = template,
+                Templatename = templatename,
+                TemplateUrl = templateUrl,
             };
 
             return await VdDescribeVariableDataContentAsync(
