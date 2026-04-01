@@ -722,7 +722,6 @@ namespace Picsart
             string? templateUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Picsart.VDTemplateParameters
             {
                 TemplateId = templateId,

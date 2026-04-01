@@ -721,7 +721,6 @@ namespace Picsart
             string? fileUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Picsart.ImageFileParameters
             {
                 File = file,
