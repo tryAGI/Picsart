@@ -44,6 +44,37 @@ namespace Picsart
             global::Picsart.AllOf<global::Picsart.VideoVideoParameters, global::Picsart.VideoAdjustParameters, global::Picsart.VideoExportParameters> request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await VideoAdjustAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Adjust Video<br/>
+        /// Adjusts the input video file with 14 different options.<br/>
+        /// **Options:**<br/>
+        ///   * Adjust audio and/or volume<br/>
+        ///   * Adjust video volume<br/>
+        ///   * Adjust brightness and/or contrast<br/>
+        ///   * Adjust clarity and/or saturation<br/>
+        ///   * Adjust speed and/or reverse the video<br/>
+        ///   * Adjust hue and/or shadows<br/>
+        ///   * Adjust highlights and/or temperature<br/>
+        ///   * Adjust noise or sharpen the video<br/>
+        ///   * Adjust vignette<br/>
+        /// If you choose an adjustment setting value out of the allowed range, the default value of 0 is used instead.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoAdjustResponse>> VideoAdjustAsResponseAsync(
+
+            global::Picsart.AllOf<global::Picsart.VideoVideoParameters, global::Picsart.VideoAdjustParameters, global::Picsart.VideoExportParameters> request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareVideoAdjustArguments(
@@ -581,9 +612,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.VideoAdjustResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.VideoAdjustResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoAdjustResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -612,9 +646,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.VideoAdjustResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.VideoAdjustResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoAdjustResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

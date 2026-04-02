@@ -35,6 +35,28 @@ namespace Picsart
             global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIExpandParameters> request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await GenaiExpandImageAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Expand Image<br/>
+        /// The **Image Expansion** service offers a groundbreaking functionality designed to enhance digital imagery by enabling users to enlarge any image to specific width and height dimensions. This sophisticated feature not only allows generative resizing but also provides the capability to specify the direction of expansion, ensuring that users have complete control over the final appearance of their images.<br/>
+        ///   <br/>
+        /// This service is engineered to accommodate the need for larger image sizes without compromising on quality. The requirement that the specified width and height dimensions exceed the original image dimensions ensures that users can seamlessly scale their images up to meet various requirements, whether for professional presentations, digital marketing materials, web design, or personal use.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiExpandImageResponse>> GenaiExpandImageAsResponseAsync(
+
+            global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIExpandParameters> request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareGenaiExpandImageArguments(
@@ -568,9 +590,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.GenaiExpandImageResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.GenaiExpandImageResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiExpandImageResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -599,9 +624,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.GenaiExpandImageResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.GenaiExpandImageResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiExpandImageResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

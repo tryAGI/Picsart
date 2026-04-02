@@ -32,6 +32,24 @@ namespace Picsart
             string inferenceId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await GenaiGenerateLogoGetresultAsResponseAsync(
+                inferenceId: inferenceId,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Get the Logo Generator result<br/>
+        /// Get the results of your logo generation. Use the inference identifier from the [Logo Generator](https://docs.picsart.io/reference/genai-generate-logo).
+        /// </summary>
+        /// <param name="inferenceId"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiGenerateLogoGetresultResponse>> GenaiGenerateLogoGetresultAsResponseAsync(
+            string inferenceId,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareGenaiGenerateLogoGetresultArguments(
@@ -563,9 +581,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.GenaiGenerateLogoGetresultResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.GenaiGenerateLogoGetresultResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiGenerateLogoGetresultResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -594,9 +615,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.GenaiGenerateLogoGetresultResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.GenaiGenerateLogoGetresultResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiGenerateLogoGetresultResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

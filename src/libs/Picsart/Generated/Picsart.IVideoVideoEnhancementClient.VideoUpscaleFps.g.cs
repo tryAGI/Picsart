@@ -19,6 +19,17 @@ namespace Picsart
         /// Video FPS Upscale<br/>
         /// Upscale your low FPS videos to 60FPS high-quality videos using Generative AI technology.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoUpscaleFpsResponse>> VideoUpscaleFpsAsResponseAsync(
+
+            global::Picsart.VideoVideoParameters request,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Video FPS Upscale<br/>
+        /// Upscale your low FPS videos to 60FPS high-quality videos using Generative AI technology.
+        /// </summary>
         /// <param name="videoUrl">
         /// Source video URL.
         /// </param>

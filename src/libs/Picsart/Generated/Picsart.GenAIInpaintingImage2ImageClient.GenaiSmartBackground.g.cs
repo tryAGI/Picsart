@@ -37,6 +37,30 @@ namespace Picsart
             global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIInpaintingParameters> request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await GenaiSmartBackgroundAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Smart Background<br/>
+        /// The **Smart Background** service elevates photo customization to new heights by offering an innovative solution for altering the backdrop of images. Unlike the traditional "Change Background" feature accessed via the /removebg endpoint, where users must provide a specific image to serve as the new background, **Smart Background** harnesses the power of AI to generate a completely new backdrop based on user descriptions.<br/>
+        ///   <br/>
+        /// In contrast, the /removebg endpoint's "Change Background" function requires a predetermined image to replace the original backdrop. While effective for straightforward substitutions, it lacks the flexibility and creative potential provided by "Smart Background," where the possibilities for your photo's new setting are limited only by your imagination. Whether you're looking to transport your subjects to exotic locales, whimsical landscapes, or bespoke scenarios, "Smart Background" offers a tailored, AI-generated solution for every photo.<br/>
+        ///   <br/>
+        /// With Smart Background, users have the unique opportunity to reimagine their photos by simply submitting an image along with a narrative of the desired background. Our advanced AI algorithms then work to seamlessly integrate a bespoke, contextually appropriate scene behind the subject of the photo. This not only allows for unparalleled personalization but also offers a creative freedom unmatched by conventional methods.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiSmartBackgroundResponse>> GenaiSmartBackgroundAsResponseAsync(
+
+            global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIInpaintingParameters> request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareGenaiSmartBackgroundArguments(
@@ -570,9 +594,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.GenaiSmartBackgroundResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.GenaiSmartBackgroundResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiSmartBackgroundResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -601,9 +628,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.GenaiSmartBackgroundResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.GenaiSmartBackgroundResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiSmartBackgroundResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

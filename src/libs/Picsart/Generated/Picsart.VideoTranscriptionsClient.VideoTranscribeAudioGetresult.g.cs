@@ -32,6 +32,24 @@ namespace Picsart
             string transactionId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await VideoTranscribeAudioGetresultAsResponseAsync(
+                transactionId: transactionId,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Get the Transcribe Audio result<br/>
+        /// Use this method, along with transaction_id, to retrieve the audio transcription.
+        /// </summary>
+        /// <param name="transactionId"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoTranscribeAudioGetresultResponse>> VideoTranscribeAudioGetresultAsResponseAsync(
+            string transactionId,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareVideoTranscribeAudioGetresultArguments(
@@ -601,9 +619,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.VideoTranscribeAudioGetresultResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.VideoTranscribeAudioGetresultResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoTranscribeAudioGetresultResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -632,9 +653,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.VideoTranscribeAudioGetresultResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.VideoTranscribeAudioGetresultResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoTranscribeAudioGetresultResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
