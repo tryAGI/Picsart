@@ -33,6 +33,26 @@ namespace Picsart
             global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageRemoveBackgroundParameters> request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ImageRemoveBackgroundAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Remove &amp; Change Background<br/>
+        /// Discover the magic of seamless background removal with our removebg service, powered by cutting-edge AI technology. Our sophisticated algorithm effortlessly identifies and isolates the foreground,  ensuring every detail from the delicate intricacies of jewelry to the finest strands of hair is captured with unparalleled precision.  Designed to excel across a vast array of use cases, our service guarantees immaculate cutouts,  whether for professional product photos, dynamic campaign graphics, or personal images meant for creative exploration.  Experience flawless edges and exceptional detail preservation every time, elevating your images beyond the ordinary. 
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageRemoveBackgroundResponse>> ImageRemoveBackgroundAsResponseAsync(
+
+            global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageRemoveBackgroundParameters> request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareImageRemoveBackgroundArguments(
@@ -604,9 +624,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.ImageRemoveBackgroundResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.ImageRemoveBackgroundResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageRemoveBackgroundResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -635,9 +658,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.ImageRemoveBackgroundResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.ImageRemoveBackgroundResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageRemoveBackgroundResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

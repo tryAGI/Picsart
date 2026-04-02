@@ -33,6 +33,26 @@ namespace Picsart
             global::Picsart.VDTemplateParameters request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await VdDescribeVariableDataContentAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Describe Replay's Variable Data<br/>
+        /// Describes the Replay. Lists all variable data fields and their types: image, text, etc.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.VdDescribeVariableDataContentResponse>> VdDescribeVariableDataContentAsResponseAsync(
+
+            global::Picsart.VDTemplateParameters request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -633,9 +653,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.VdDescribeVariableDataContentResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.VdDescribeVariableDataContentResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VdDescribeVariableDataContentResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -664,9 +687,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.VdDescribeVariableDataContentResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.VdDescribeVariableDataContentResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VdDescribeVariableDataContentResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

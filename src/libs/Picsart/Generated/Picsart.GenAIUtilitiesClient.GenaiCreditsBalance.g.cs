@@ -30,6 +30,23 @@ namespace Picsart
         public async global::System.Threading.Tasks.Task<global::Picsart.GenaiCreditsBalanceResponse> GenaiCreditsBalanceAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await GenaiCreditsBalanceAsResponseAsync(
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Credits Balance<br/>
+        /// Check your balance of credits.<br/>
+        /// **Authorization:**<br/>
+        ///     Requires an API key to be provided in the **X-Picsart-API-Key** request header.
+        /// </summary>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiCreditsBalanceResponse>> GenaiCreditsBalanceAsResponseAsync(
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareGenaiCreditsBalanceArguments(
@@ -559,9 +576,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.GenaiCreditsBalanceResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.GenaiCreditsBalanceResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiCreditsBalanceResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -590,9 +610,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.GenaiCreditsBalanceResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.GenaiCreditsBalanceResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiCreditsBalanceResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

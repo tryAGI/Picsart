@@ -33,6 +33,26 @@ namespace Picsart
             global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageAIEffectsParameters> request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ImageApplyAiEffectAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// AI Effects<br/>
+        /// With the *AI Effects* service you can apply up to 40+ different AI effects to an image.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageApplyAiEffectResponse>> ImageApplyAiEffectAsResponseAsync(
+
+            global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageAIEffectsParameters> request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareImageApplyAiEffectArguments(
@@ -604,9 +624,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.ImageApplyAiEffectResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.ImageApplyAiEffectResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageApplyAiEffectResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -635,9 +658,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.ImageApplyAiEffectResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.ImageApplyAiEffectResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageApplyAiEffectResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

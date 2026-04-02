@@ -33,6 +33,26 @@ namespace Picsart
             global::Picsart.VideoVideoParameters request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await VideoUpscaleFpsAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Video FPS Upscale<br/>
+        /// Upscale your low FPS videos to 60FPS high-quality videos using Generative AI technology.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoUpscaleFpsResponse>> VideoUpscaleFpsAsResponseAsync(
+
+            global::Picsart.VideoVideoParameters request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -613,9 +633,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.VideoUpscaleFpsResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.VideoUpscaleFpsResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoUpscaleFpsResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -644,9 +667,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.VideoUpscaleFpsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.VideoUpscaleFpsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VideoUpscaleFpsResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

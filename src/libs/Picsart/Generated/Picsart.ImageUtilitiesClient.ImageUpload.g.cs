@@ -38,6 +38,31 @@ namespace Picsart
             global::Picsart.ImageUploadParameters request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ImageUploadAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Upload Image<br/>
+        /// The *upload* service is used to upload an image when you want to apply several transformations to it.<br/>
+        ///   By uploading an image first, you'll receive a transaction_id which you can use repeatedly for transformations and thereby avoid having to upload an image for each and every one.<br/>
+        ///   If you're sure you only want to do a single transformation to an image, there's no benefit to using this service. Just jump right to that service.<br/>
+        ///  **Limitations:** Supported source image formats are JPG, PNG, TIFF and WEBP.  <br/>
+        ///  **Source Image:**<br/>
+        ///    You can source the image by providing a file or a URL to an online image.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageUploadResponse>> ImageUploadAsResponseAsync(
+
+            global::Picsart.ImageUploadParameters request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -631,9 +656,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.ImageUploadResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.ImageUploadResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageUploadResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -662,9 +690,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.ImageUploadResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.ImageUploadResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageUploadResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

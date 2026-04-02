@@ -38,6 +38,31 @@ namespace Picsart
             global::Picsart.ImageFileParameters request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ImageDesignImportAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Design Import (beta)<br/>
+        /// With the *Design Import* tool you can instantly turn your design files (AI, SVG) into a Replay file (Picsart's proprietary project file format) that can be consumed by the [Photo and Video Editor SDK](https://docs.picsart.io/docs/photo-video-editor-overview).<br/>
+        ///   <br/>
+        /// Use this to import your existing designs and make them resuable in Picsart.<br/>
+        /// **Suported Formats:** Examples of where the vectorizer can be used include:<br/>
+        ///   * AI (Adobe Illustrator)<br/>
+        ///   * SVG (Scalable Vector Graphics)
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageDesignImportResponse>> ImageDesignImportAsResponseAsync(
+
+            global::Picsart.ImageFileParameters request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -631,9 +656,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.ImageDesignImportResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.ImageDesignImportResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageDesignImportResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -662,9 +690,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.ImageDesignImportResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.ImageDesignImportResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageDesignImportResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

@@ -44,6 +44,37 @@ namespace Picsart
             global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleEnhanceParameters> request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ImageUltraEnhanceAsResponseAsync(
+
+                request: request,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Ultra Enhance<br/>
+        /// *Ultra enhance* is a new upscaling technique with a generative model which provides high frequency detail. It works well on images without noise and preserves details in a superior way.<br/>
+        /// **Limitations:** <br/>
+        ///  **Minimums/Maximums:**<br/>
+        ///    * Up to 64Mpx output images<br/>
+        ///  **Examples:**<br/>
+        ///    Examples of where ultra enhance can be utilized include the following:<br/>
+        ///    * Low resolution images<br/>
+        ///    * Images that need smoothing and realistic details <br/>
+        ///    * To de-noise an image<br/>
+        ///    * Works best with the Face Enhance service<br/>
+        ///  **Source Image:**<br/>
+        ///    If you plan to upscale enhance an image several times, we recommend you first upload the source image using the *Upload* method and then use the reference image ID. Otherwise, you can source the image by providing a file or a URL to an online image.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageUltraEnhanceResponse>> ImageUltraEnhanceAsResponseAsync(
+
+            global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleEnhanceParameters> request,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareImageUltraEnhanceArguments(
@@ -615,9 +646,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.ImageUltraEnhanceResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.ImageUltraEnhanceResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageUltraEnhanceResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -646,9 +680,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.ImageUltraEnhanceResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.ImageUltraEnhanceResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageUltraEnhanceResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {

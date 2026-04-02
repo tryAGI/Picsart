@@ -12,5 +12,13 @@ namespace Picsart
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.VdCreditsBalanceResponse> VdCreditsBalanceAsync(
             global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Credits Balance<br/>
+        /// Check your balance of credits.
+        /// </summary>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.VdCreditsBalanceResponse>> VdCreditsBalanceAsResponseAsync(
+            global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

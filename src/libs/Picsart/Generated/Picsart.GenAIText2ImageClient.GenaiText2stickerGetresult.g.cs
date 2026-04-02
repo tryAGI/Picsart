@@ -32,6 +32,24 @@ namespace Picsart
             string inferenceId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await GenaiText2stickerGetresultAsResponseAsync(
+                inferenceId: inferenceId,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Get the Text2Sticker result<br/>
+        /// Get the generated stickers.
+        /// </summary>
+        /// <param name="inferenceId"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiText2stickerGetresultResponse>> GenaiText2stickerGetresultAsResponseAsync(
+            string inferenceId,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareGenaiText2stickerGetresultArguments(
@@ -563,9 +581,12 @@ namespace Picsart
                 {
                     __response.EnsureSuccessStatusCode();
 
-                    return
-                        global::Picsart.GenaiText2stickerGetresultResponse.FromJson(__content, JsonSerializerContext) ??
+                    var __value = global::Picsart.GenaiText2stickerGetresultResponse.FromJson(__content, JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiText2stickerGetresultResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -594,9 +615,12 @@ namespace Picsart
 #endif
                     ).ConfigureAwait(false);
 
-                    return
-                        await global::Picsart.GenaiText2stickerGetresultResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                    var __value = await global::Picsart.GenaiText2stickerGetresultResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                    return new global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiText2stickerGetresultResponse>(
+                        statusCode: __response.StatusCode,
+                        headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                        body: __value);
                 }
                 catch (global::System.Exception __ex)
                 {
