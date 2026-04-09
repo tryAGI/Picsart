@@ -5,6 +5,25 @@ namespace Picsart
 {
     public partial class VideoTranscriptionsClient
     {
+
+
+        private static readonly global::Picsart.EndPointSecurityRequirement s_VideoTranscribeAudioSecurityRequirement0 =
+            new global::Picsart.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Picsart.EndPointAuthorizationRequirement[]
+                {                    new global::Picsart.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-Picsart-API-Key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Picsart.EndPointSecurityRequirement[] s_VideoTranscribeAudioSecurityRequirements =
+            new global::Picsart.EndPointSecurityRequirement[]
+            {                s_VideoTranscribeAudioSecurityRequirement0,
+            };
         partial void PrepareVideoTranscribeAudioArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Picsart.AllOf<global::Picsart.VideoTranscribeFileParameters, global::Picsart.VideoTranscribeParameters> request);
@@ -77,9 +96,15 @@ namespace Picsart
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Picsart.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_VideoTranscribeAudioSecurityRequirements,
+                operationName: "VideoTranscribeAudioAsync");
+
             var __pathBuilder = new global::Picsart.PathBuilder(
                 path: "/video/audio/transcribe",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -89,7 +114,7 @@ namespace Picsart
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

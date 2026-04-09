@@ -12,7 +12,7 @@ namespace Picsart
         /// <summary>
         /// Production
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.picsart.io";
+        public const string DefaultBaseUrl = "https://api.picsart.io/";
 
         private bool _disposeHttpClient = true;
 

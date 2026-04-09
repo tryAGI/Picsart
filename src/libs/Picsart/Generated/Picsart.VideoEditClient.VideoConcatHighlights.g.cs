@@ -5,6 +5,25 @@ namespace Picsart
 {
     public partial class VideoEditClient
     {
+
+
+        private static readonly global::Picsart.EndPointSecurityRequirement s_VideoConcatHighlightsSecurityRequirement0 =
+            new global::Picsart.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Picsart.EndPointAuthorizationRequirement[]
+                {                    new global::Picsart.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-Picsart-API-Key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Picsart.EndPointSecurityRequirement[] s_VideoConcatHighlightsSecurityRequirements =
+            new global::Picsart.EndPointSecurityRequirement[]
+            {                s_VideoConcatHighlightsSecurityRequirement0,
+            };
         partial void PrepareVideoConcatHighlightsArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Picsart.AllOf<global::Picsart.VideoVideoParameters, global::Picsart.VideoConcatSegmentsParameters, global::Picsart.VideoExportParameters> request);
@@ -57,9 +76,15 @@ namespace Picsart
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Picsart.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_VideoConcatHighlightsSecurityRequirements,
+                operationName: "VideoConcatHighlightsAsync");
+
             var __pathBuilder = new global::Picsart.PathBuilder(
                 path: "/video/concat/highlights",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -69,7 +94,7 @@ namespace Picsart
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,25 @@ namespace Picsart
 {
     public partial class VdVariableDataContentClient
     {
+
+
+        private static readonly global::Picsart.EndPointSecurityRequirement s_VdExportVariableDataContentSecurityRequirement0 =
+            new global::Picsart.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Picsart.EndPointAuthorizationRequirement[]
+                {                    new global::Picsart.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-Picsart-API-Key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Picsart.EndPointSecurityRequirement[] s_VdExportVariableDataContentSecurityRequirements =
+            new global::Picsart.EndPointSecurityRequirement[]
+            {                s_VdExportVariableDataContentSecurityRequirement0,
+            };
         partial void PrepareVdExportVariableDataContentArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Picsart.AllOf<global::Picsart.VDTemplateParameters, global::Picsart.VDDataFileParameters, global::Picsart.VDExportVariableDataContentParameters> request);
@@ -61,9 +80,15 @@ namespace Picsart
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Picsart.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_VdExportVariableDataContentSecurityRequirements,
+                operationName: "VdExportVariableDataContentAsync");
+
             var __pathBuilder = new global::Picsart.PathBuilder(
                 path: "/vd/export/variable-data-content",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -73,7 +98,7 @@ namespace Picsart
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

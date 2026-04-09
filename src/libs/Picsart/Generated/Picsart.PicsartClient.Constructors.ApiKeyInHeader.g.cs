@@ -6,6 +6,7 @@ namespace Picsart
     public sealed partial class PicsartClient
     {
         /// <inheritdoc cref="PicsartClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Picsart.EndPointAuthorization}?, bool)"/>
+
         public PicsartClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,
