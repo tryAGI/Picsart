@@ -5,6 +5,25 @@ namespace Picsart
 {
     public partial class GenAIText2AudioClient
     {
+
+
+        private static readonly global::Picsart.EndPointSecurityRequirement s_GenaiText2soundSecurityRequirement0 =
+            new global::Picsart.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Picsart.EndPointAuthorizationRequirement[]
+                {                    new global::Picsart.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-Picsart-API-Key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Picsart.EndPointSecurityRequirement[] s_GenaiText2soundSecurityRequirements =
+            new global::Picsart.EndPointSecurityRequirement[]
+            {                s_GenaiText2soundSecurityRequirement0,
+            };
         partial void PrepareGenaiText2soundArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Picsart.AllOf<global::Picsart.GenAIText2SoundParameters, global::Picsart.GenAIText2SoundModels> request);
@@ -59,9 +78,15 @@ namespace Picsart
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Picsart.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GenaiText2soundSecurityRequirements,
+                operationName: "GenaiText2soundAsync");
+
             var __pathBuilder = new global::Picsart.PathBuilder(
                 path: "/genai/text2sound",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -71,7 +96,7 @@ namespace Picsart
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

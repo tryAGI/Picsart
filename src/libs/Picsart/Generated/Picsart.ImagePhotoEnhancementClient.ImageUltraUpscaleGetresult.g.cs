@@ -5,6 +5,25 @@ namespace Picsart
 {
     public partial class ImagePhotoEnhancementClient
     {
+
+
+        private static readonly global::Picsart.EndPointSecurityRequirement s_ImageUltraUpscaleGetresultSecurityRequirement0 =
+            new global::Picsart.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Picsart.EndPointAuthorizationRequirement[]
+                {                    new global::Picsart.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-Picsart-API-Key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Picsart.EndPointSecurityRequirement[] s_ImageUltraUpscaleGetresultSecurityRequirements =
+            new global::Picsart.EndPointSecurityRequirement[]
+            {                s_ImageUltraUpscaleGetresultSecurityRequirement0,
+            };
         partial void PrepareImageUltraUpscaleGetresultArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string transactionId);
@@ -56,9 +75,15 @@ namespace Picsart
                 httpClient: HttpClient,
                 transactionId: ref transactionId);
 
+
+            var __authorizations = global::Picsart.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ImageUltraUpscaleGetresultSecurityRequirements,
+                operationName: "ImageUltraUpscaleGetresultAsync");
+
             var __pathBuilder = new global::Picsart.PathBuilder(
                 path: $"/image/upscale/ultra/{transactionId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -68,7 +93,7 @@ namespace Picsart
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

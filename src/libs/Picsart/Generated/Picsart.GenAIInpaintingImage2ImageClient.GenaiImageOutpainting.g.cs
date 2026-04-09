@@ -5,6 +5,25 @@ namespace Picsart
 {
     public partial class GenAIInpaintingImage2ImageClient
     {
+
+
+        private static readonly global::Picsart.EndPointSecurityRequirement s_GenaiImageOutpaintingSecurityRequirement0 =
+            new global::Picsart.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Picsart.EndPointAuthorizationRequirement[]
+                {                    new global::Picsart.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-Picsart-API-Key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Picsart.EndPointSecurityRequirement[] s_GenaiImageOutpaintingSecurityRequirements =
+            new global::Picsart.EndPointSecurityRequirement[]
+            {                s_GenaiImageOutpaintingSecurityRequirement0,
+            };
         partial void PrepareGenaiImageOutpaintingArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIMaskParameters, global::Picsart.GenAIInpaintingParameters> request);
@@ -65,9 +84,15 @@ namespace Picsart
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Picsart.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GenaiImageOutpaintingSecurityRequirements,
+                operationName: "GenaiImageOutpaintingAsync");
+
             var __pathBuilder = new global::Picsart.PathBuilder(
                 path: "/genai/painting/outpaint",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -77,7 +102,7 @@ namespace Picsart
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
