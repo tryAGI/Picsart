@@ -9,30 +9,36 @@ namespace Picsart
         /// Use AI to define the segment that should be blurred, e.g. foreground or background, faces or car plates.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageSelectiveBlurResponse> ImageSelectiveBlurAsync(
 
             global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageSelectiveBlurParameters> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Selective Blur<br/>
         /// Use AI to define the segment that should be blurred, e.g. foreground or background, faces or car plates.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageSelectiveBlurResponse>> ImageSelectiveBlurAsResponseAsync(
 
             global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageSelectiveBlurParameters> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Selective Blur<br/>
         /// Use AI to define the segment that should be blurred, e.g. foreground or background, faces or car plates.
         /// </summary>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageSelectiveBlurResponse> ImageSelectiveBlurAsync(
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

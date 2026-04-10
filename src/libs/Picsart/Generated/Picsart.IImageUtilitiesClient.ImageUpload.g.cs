@@ -14,11 +14,13 @@ namespace Picsart
         ///    You can source the image by providing a file or a URL to an online image.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageUploadResponse> ImageUploadAsync(
 
             global::Picsart.ImageUploadParameters request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Upload Image<br/>
@@ -30,11 +32,13 @@ namespace Picsart
         ///    You can source the image by providing a file or a URL to an online image.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageUploadResponse>> ImageUploadAsResponseAsync(
 
             global::Picsart.ImageUploadParameters request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Upload Image<br/>
@@ -54,12 +58,14 @@ namespace Picsart
         /// <param name="imageUrl">
         /// Source image URL. (If this parameter is present, the other image source parameters must be empty.)
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageUploadResponse> ImageUploadAsync(
             byte[]? image = default,
             string? imagename = default,
             string? imageUrl = default,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

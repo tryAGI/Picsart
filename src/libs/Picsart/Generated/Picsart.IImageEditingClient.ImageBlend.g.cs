@@ -11,11 +11,13 @@ namespace Picsart
         /// No need for manual edits or complex graphic design tools.  With the blend API, your app or service can automate visually rich output that's both fast and fully customizable.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageBlendResponse> ImageBlendAsync(
 
             global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageOverlayParameters> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Blending<br/>
@@ -24,11 +26,13 @@ namespace Picsart
         /// No need for manual edits or complex graphic design tools.  With the blend API, your app or service can automate visually rich output that's both fast and fully customizable.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageBlendResponse>> ImageBlendAsResponseAsync(
 
             global::Picsart.AllOf<global::Picsart.ImageImageParameters, global::Picsart.ImageOverlayParameters> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Blending<br/>
@@ -36,9 +40,11 @@ namespace Picsart
         /// This endpoint lets you seamlessly combine a base image with another visual layer -  like an overlay, mask, or logo - while giving you full control over how the two interact.  Think of it as your virtual creative layer engine: the same power you'd expect from a professional design tool,  now embedded into your workflow or platform.<br/>
         /// No need for manual edits or complex graphic design tools.  With the blend API, your app or service can automate visually rich output that's both fast and fully customizable.
         /// </summary>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageBlendResponse> ImageBlendAsync(
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

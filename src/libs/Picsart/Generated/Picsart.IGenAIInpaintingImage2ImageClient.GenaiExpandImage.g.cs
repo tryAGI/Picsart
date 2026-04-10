@@ -11,11 +11,13 @@ namespace Picsart
         /// This service is engineered to accommodate the need for larger image sizes without compromising on quality. The requirement that the specified width and height dimensions exceed the original image dimensions ensures that users can seamlessly scale their images up to meet various requirements, whether for professional presentations, digital marketing materials, web design, or personal use.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.GenaiExpandImageResponse> GenaiExpandImageAsync(
 
             global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIExpandParameters> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Expand Image<br/>
@@ -24,11 +26,13 @@ namespace Picsart
         /// This service is engineered to accommodate the need for larger image sizes without compromising on quality. The requirement that the specified width and height dimensions exceed the original image dimensions ensures that users can seamlessly scale their images up to meet various requirements, whether for professional presentations, digital marketing materials, web design, or personal use.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiExpandImageResponse>> GenaiExpandImageAsResponseAsync(
 
             global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIExpandParameters> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Expand Image<br/>
@@ -36,9 +40,11 @@ namespace Picsart
         ///   <br/>
         /// This service is engineered to accommodate the need for larger image sizes without compromising on quality. The requirement that the specified width and height dimensions exceed the original image dimensions ensures that users can seamlessly scale their images up to meet various requirements, whether for professional presentations, digital marketing materials, web design, or personal use.
         /// </summary>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.GenaiExpandImageResponse> GenaiExpandImageAsync(
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
