@@ -14,11 +14,13 @@ namespace Picsart
         ///   * SVG (Scalable Vector Graphics)
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageDesignImportResponse> ImageDesignImportAsync(
 
             global::Picsart.ImageFileParameters request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Design Import (beta)<br/>
@@ -30,11 +32,13 @@ namespace Picsart
         ///   * SVG (Scalable Vector Graphics)
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageDesignImportResponse>> ImageDesignImportAsResponseAsync(
 
             global::Picsart.ImageFileParameters request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Design Import (beta)<br/>
@@ -54,12 +58,14 @@ namespace Picsart
         /// <param name="fileUrl">
         /// Source file URL. (If this parameter is present, the other source parameters must be empty.)
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageDesignImportResponse> ImageDesignImportAsync(
             byte[]? file = default,
             string? filename = default,
             string? fileUrl = default,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -26,6 +26,7 @@ namespace Picsart
             Authorizations.Add(new global::Picsart.EndPointAuthorization
             {
                 Type = "ApiKey",
+                SchemeId = "ApikeyXPicsartApiKey",
                 Location = "Header",
                 Name = "X-Picsart-API-Key",
                 Value = apiKey,

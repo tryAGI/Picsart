@@ -33,6 +33,9 @@ namespace Picsart
 #if DEBUG
             = true;
 #endif
+
+        /// <inheritdoc/>
+        public global::Picsart.AutoSDKClientOptions Options { get; }
         /// <summary>
         /// 
         /// </summary>
@@ -42,7 +45,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public GenAIInpaintingImage2ImageClient GenAIInpaintingImage2Image => new GenAIInpaintingImage2ImageClient(HttpClient, authorizations: Authorizations)
+        public GenAIInpaintingImage2ImageClient GenAIInpaintingImage2Image => new GenAIInpaintingImage2ImageClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -51,7 +54,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public GenAIText2AudioClient GenAIText2Audio => new GenAIText2AudioClient(HttpClient, authorizations: Authorizations)
+        public GenAIText2AudioClient GenAIText2Audio => new GenAIText2AudioClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -60,7 +63,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public GenAIText2ImageClient GenAIText2Image => new GenAIText2ImageClient(HttpClient, authorizations: Authorizations)
+        public GenAIText2ImageClient GenAIText2Image => new GenAIText2ImageClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -69,7 +72,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public GenAIText2TextClient GenAIText2Text => new GenAIText2TextClient(HttpClient, authorizations: Authorizations)
+        public GenAIText2TextClient GenAIText2Text => new GenAIText2TextClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -78,7 +81,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public GenAIText2VideoImage2VideoClient GenAIText2VideoImage2Video => new GenAIText2VideoImage2VideoClient(HttpClient, authorizations: Authorizations)
+        public GenAIText2VideoImage2VideoClient GenAIText2VideoImage2Video => new GenAIText2VideoImage2VideoClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -87,7 +90,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public GenAIUtilitiesClient GenAIUtilities => new GenAIUtilitiesClient(HttpClient, authorizations: Authorizations)
+        public GenAIUtilitiesClient GenAIUtilities => new GenAIUtilitiesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -96,7 +99,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageClassificationClient ImageClassification => new ImageClassificationClient(HttpClient, authorizations: Authorizations)
+        public ImageClassificationClient ImageClassification => new ImageClassificationClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -105,7 +108,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageContentGenerationClient ImageContentGeneration => new ImageContentGenerationClient(HttpClient, authorizations: Authorizations)
+        public ImageContentGenerationClient ImageContentGeneration => new ImageContentGenerationClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -114,7 +117,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageConversionClient ImageConversion => new ImageConversionClient(HttpClient, authorizations: Authorizations)
+        public ImageConversionClient ImageConversion => new ImageConversionClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -123,7 +126,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageEditingClient ImageEditing => new ImageEditingClient(HttpClient, authorizations: Authorizations)
+        public ImageEditingClient ImageEditing => new ImageEditingClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -132,7 +135,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageEffectsClient ImageEffects => new ImageEffectsClient(HttpClient, authorizations: Authorizations)
+        public ImageEffectsClient ImageEffects => new ImageEffectsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -141,7 +144,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImagePhotoEnhancementClient ImagePhotoEnhancement => new ImagePhotoEnhancementClient(HttpClient, authorizations: Authorizations)
+        public ImagePhotoEnhancementClient ImagePhotoEnhancement => new ImagePhotoEnhancementClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -150,7 +153,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageRemoveBackgroundClient ImageRemoveBackground => new ImageRemoveBackgroundClient(HttpClient, authorizations: Authorizations)
+        public ImageRemoveBackgroundClient ImageRemoveBackground => new ImageRemoveBackgroundClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -159,7 +162,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageSurfacemapClient ImageSurfacemap => new ImageSurfacemapClient(HttpClient, authorizations: Authorizations)
+        public ImageSurfacemapClient ImageSurfacemap => new ImageSurfacemapClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -168,7 +171,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageUtilitiesClient ImageUtilities => new ImageUtilitiesClient(HttpClient, authorizations: Authorizations)
+        public ImageUtilitiesClient ImageUtilities => new ImageUtilitiesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -177,7 +180,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public ImageWatermarkClient ImageWatermark => new ImageWatermarkClient(HttpClient, authorizations: Authorizations)
+        public ImageWatermarkClient ImageWatermark => new ImageWatermarkClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -186,7 +189,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VdReplayClient VdReplay => new VdReplayClient(HttpClient, authorizations: Authorizations)
+        public VdReplayClient VdReplay => new VdReplayClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -195,7 +198,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VdUtilitiesClient VdUtilities => new VdUtilitiesClient(HttpClient, authorizations: Authorizations)
+        public VdUtilitiesClient VdUtilities => new VdUtilitiesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -204,7 +207,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VdVariableDataContentClient VdVariableDataContent => new VdVariableDataContentClient(HttpClient, authorizations: Authorizations)
+        public VdVariableDataContentClient VdVariableDataContent => new VdVariableDataContentClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -213,7 +216,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoAdsClient VideoAds => new VideoAdsClient(HttpClient, authorizations: Authorizations)
+        public VideoAdsClient VideoAds => new VideoAdsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -222,7 +225,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoAudioClient VideoAudio => new VideoAudioClient(HttpClient, authorizations: Authorizations)
+        public VideoAudioClient VideoAudio => new VideoAudioClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -231,7 +234,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoEditClient VideoEdit => new VideoEditClient(HttpClient, authorizations: Authorizations)
+        public VideoEditClient VideoEdit => new VideoEditClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -240,7 +243,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoEffectsClient VideoEffects => new VideoEffectsClient(HttpClient, authorizations: Authorizations)
+        public VideoEffectsClient VideoEffects => new VideoEffectsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -249,7 +252,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoMetadataClient VideoMetadata => new VideoMetadataClient(HttpClient, authorizations: Authorizations)
+        public VideoMetadataClient VideoMetadata => new VideoMetadataClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -258,7 +261,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoRemoveBackgroundClient VideoRemoveBackground => new VideoRemoveBackgroundClient(HttpClient, authorizations: Authorizations)
+        public VideoRemoveBackgroundClient VideoRemoveBackground => new VideoRemoveBackgroundClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -267,7 +270,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoTranscriptionsClient VideoTranscriptions => new VideoTranscriptionsClient(HttpClient, authorizations: Authorizations)
+        public VideoTranscriptionsClient VideoTranscriptions => new VideoTranscriptionsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -276,7 +279,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoUtilitiesClient VideoUtilities => new VideoUtilitiesClient(HttpClient, authorizations: Authorizations)
+        public VideoUtilitiesClient VideoUtilities => new VideoUtilitiesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -285,7 +288,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoVideoEnhancementClient VideoVideoEnhancement => new VideoVideoEnhancementClient(HttpClient, authorizations: Authorizations)
+        public VideoVideoEnhancementClient VideoVideoEnhancement => new VideoVideoEnhancementClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -294,7 +297,7 @@ namespace Picsart
         /// <summary>
         /// 
         /// </summary>
-        public VideoWatermarkClient VideoWatermark => new VideoWatermarkClient(HttpClient, authorizations: Authorizations)
+        public VideoWatermarkClient VideoWatermark => new VideoWatermarkClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -313,11 +316,37 @@ namespace Picsart
             global::System.Net.Http.HttpClient? httpClient = null,
             global::System.Uri? baseUri = null,
             global::System.Collections.Generic.List<global::Picsart.EndPointAuthorization>? authorizations = null,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri,
+                authorizations,
+                options: null,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
+        /// Creates a new instance of the PicsartClient.
+        /// If no httpClient is provided, a new one will be created.
+        /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="baseUri">The base URL for the API. If not provided, the default baseUri from OpenAPI spec will be used.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public PicsartClient(
+            global::System.Net.Http.HttpClient? httpClient = null,
+            global::System.Uri? baseUri = null,
+            global::System.Collections.Generic.List<global::Picsart.EndPointAuthorization>? authorizations = null,
+            global::Picsart.AutoSDKClientOptions? options = null,
             bool disposeHttpClient = true)
         {
+
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
             HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Picsart.EndPointAuthorization>();
+            Options = options ?? new global::Picsart.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
 
             Initialized(HttpClient);

@@ -13,11 +13,13 @@ namespace Picsart
         /// With Smart Background, users have the unique opportunity to reimagine their photos by simply submitting an image along with a narrative of the desired background. Our advanced AI algorithms then work to seamlessly integrate a bespoke, contextually appropriate scene behind the subject of the photo. This not only allows for unparalleled personalization but also offers a creative freedom unmatched by conventional methods.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.GenaiSmartBackgroundResponse> GenaiSmartBackgroundAsync(
 
             global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIInpaintingParameters> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Smart Background<br/>
@@ -28,11 +30,13 @@ namespace Picsart
         /// With Smart Background, users have the unique opportunity to reimagine their photos by simply submitting an image along with a narrative of the desired background. Our advanced AI algorithms then work to seamlessly integrate a bespoke, contextually appropriate scene behind the subject of the photo. This not only allows for unparalleled personalization but also offers a creative freedom unmatched by conventional methods.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiSmartBackgroundResponse>> GenaiSmartBackgroundAsResponseAsync(
 
             global::Picsart.AllOf<global::Picsart.GenAIImageParameters, global::Picsart.GenAIInpaintingParameters> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Smart Background<br/>
@@ -42,9 +46,11 @@ namespace Picsart
         ///   <br/>
         /// With Smart Background, users have the unique opportunity to reimagine their photos by simply submitting an image along with a narrative of the desired background. Our advanced AI algorithms then work to seamlessly integrate a bespoke, contextually appropriate scene behind the subject of the photo. This not only allows for unparalleled personalization but also offers a creative freedom unmatched by conventional methods.
         /// </summary>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.GenaiSmartBackgroundResponse> GenaiSmartBackgroundAsync(
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

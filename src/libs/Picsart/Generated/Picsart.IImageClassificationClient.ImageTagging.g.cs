@@ -11,22 +11,26 @@ namespace Picsart
         /// This tagging service analyzes the image and suggests hashtags that are relevant to the content.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageTaggingResponse> ImageTaggingAsync(
 
             global::Picsart.ImageImageParameters request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Image Tagging<br/>
         /// This tagging service analyzes the image and suggests hashtags that are relevant to the content.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageTaggingResponse>> ImageTaggingAsResponseAsync(
 
             global::Picsart.ImageImageParameters request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Image Tagging<br/>
@@ -41,12 +45,14 @@ namespace Picsart
         /// <param name="imageUrl">
         /// Source image URL. (If this parameter is present, the other image source parameters must be empty.)
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.ImageTaggingResponse> ImageTaggingAsync(
             byte[]? image = default,
             string? imagename = default,
             string? imageUrl = default,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

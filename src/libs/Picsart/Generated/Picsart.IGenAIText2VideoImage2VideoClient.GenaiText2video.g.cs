@@ -11,11 +11,13 @@ namespace Picsart
         /// Similarly, note that different models do support different resolutions and output video quality parameters. In this case as well, the output video's resolutions and quality are not guaranteed to be exactly the same as provided input params. The service will provide what's "closer" to the original request. To make sure there are minimal deviations, we recommend doing test requests and checking the output video as well as doing research on original model's official documentation.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.GenaiText2videoResponse> GenaiText2videoAsync(
 
             global::Picsart.AllOf<global::Picsart.GenAIText2VideoParameters, global::Picsart.GenAIText2VideoModels> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Text2Video<br/>
@@ -24,11 +26,13 @@ namespace Picsart
         /// Similarly, note that different models do support different resolutions and output video quality parameters. In this case as well, the output video's resolutions and quality are not guaranteed to be exactly the same as provided input params. The service will provide what's "closer" to the original request. To make sure there are minimal deviations, we recommend doing test requests and checking the output video as well as doing research on original model's official documentation.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Picsart.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.GenaiText2videoResponse>> GenaiText2videoAsResponseAsync(
 
             global::Picsart.AllOf<global::Picsart.GenAIText2VideoParameters, global::Picsart.GenAIText2VideoModels> request,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Text2Video<br/>
@@ -36,9 +40,11 @@ namespace Picsart
         /// Note, that considering the big number of different models that are supported with this service, some limitations may apply. For example, some models (e.g. Grok Imagine Video / OpenAI Sora 2 / Sora 2 Pro / OVI) don't support the option to disable sound. With these models the result video will always be generated regardless to the provided input params.<br/>
         /// Similarly, note that different models do support different resolutions and output video quality parameters. In this case as well, the output video's resolutions and quality are not guaranteed to be exactly the same as provided input params. The service will provide what's "closer" to the original request. To make sure there are minimal deviations, we recommend doing test requests and checking the output video as well as doing research on original model's official documentation.
         /// </summary>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Picsart.GenaiText2videoResponse> GenaiText2videoAsync(
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
