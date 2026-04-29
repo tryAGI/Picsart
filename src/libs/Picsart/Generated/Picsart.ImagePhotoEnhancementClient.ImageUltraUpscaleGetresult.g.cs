@@ -146,7 +146,7 @@ namespace Picsart
                 PrepareImageUltraUpscaleGetresultRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    transactionId: transactionId);
+                    transactionId: transactionId!);
 
                 return __httpRequest;
             }
