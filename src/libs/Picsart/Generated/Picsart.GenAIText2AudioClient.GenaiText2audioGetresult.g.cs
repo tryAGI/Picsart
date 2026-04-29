@@ -146,7 +146,7 @@ namespace Picsart
                 PrepareGenaiText2audioGetresultRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    inferenceId: inferenceId);
+                    inferenceId: inferenceId!);
 
                 return __httpRequest;
             }

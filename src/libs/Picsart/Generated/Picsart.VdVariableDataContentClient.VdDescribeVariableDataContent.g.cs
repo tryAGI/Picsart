@@ -145,13 +145,41 @@ namespace Picsart
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.TemplateId}"),
+                                    content: new global::System.Net.Http.StringContent(request.TemplateId ?? string.Empty),
                                     name: "\"template_id\"");
                             } 
                             if (request.Template != default)
                             {
 
                                 var __contentTemplate = new global::System.Net.Http.ByteArrayContent(request.Template ?? global::System.Array.Empty<byte>());
+                                __contentTemplate.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue(
+                                    request.Templatename is null
+                                        ? "application/octet-stream"
+                                        : (global::System.IO.Path.GetExtension(request.Templatename) ?? string.Empty).ToLowerInvariant() switch
+                                        {
+                                            ".aac" => "audio/aac",
+                                            ".flac" => "audio/flac",
+                                            ".gif" => "image/gif",
+                                            ".jpeg" => "image/jpeg",
+                                            ".jpg" => "image/jpeg",
+                                            ".json" => "application/json",
+                                            ".m4a" => "audio/mp4",
+                                            ".mp3" => "audio/mpeg",
+                                            ".mp4" => "video/mp4",
+                                            ".mpeg" => "audio/mpeg",
+                                            ".mpga" => "audio/mpeg",
+                                            ".oga" => "audio/ogg",
+                                            ".ogg" => "audio/ogg",
+                                            ".opus" => "audio/ogg",
+                                            ".pdf" => "application/pdf",
+                                            ".png" => "image/png",
+                                            ".txt" => "text/plain",
+                                            ".wav" => "audio/wav",
+                                            ".weba" => "audio/webm",
+                                            ".webm" => "video/webm",
+                                            ".webp" => "image/webp",
+                                            _ => "application/octet-stream",
+                                        });
                                 __httpRequestContent.Add(
                                     content: __contentTemplate,
                                     name: "\"template\"",
@@ -165,7 +193,7 @@ namespace Picsart
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.TemplateUrl}"),
+                                    content: new global::System.Net.Http.StringContent(request.TemplateUrl ?? string.Empty),
                                     name: "\"template_url\"");
                             }
                             __httpRequest.Content = __httpRequestContent;

@@ -145,7 +145,7 @@ namespace Picsart
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.VideoUrl}"),
+                                    content: new global::System.Net.Http.StringContent(request.VideoUrl ?? string.Empty),
                                     name: "\"video_url\"");
                             }
                             __httpRequest.Content = __httpRequestContent;

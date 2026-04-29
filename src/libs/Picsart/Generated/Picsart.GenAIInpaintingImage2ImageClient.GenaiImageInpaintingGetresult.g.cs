@@ -148,7 +148,7 @@ namespace Picsart
                 PrepareGenaiImageInpaintingGetresultRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    inferenceId: inferenceId);
+                    inferenceId: inferenceId!);
 
                 return __httpRequest;
             }
