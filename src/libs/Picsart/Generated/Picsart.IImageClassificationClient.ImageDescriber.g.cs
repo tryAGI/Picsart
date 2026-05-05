@@ -54,5 +54,50 @@ namespace Picsart
             string? imageUrl = default,
             global::Picsart.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Describe Image<br/>
+        /// The image *Describer* service helps generate a detailed text description for the provided image (image2text).
+        /// </summary>
+        /// <param name="image">
+        /// Source image file (binary). (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
+        /// <param name="imagename">
+        /// Source image file (binary). (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
+        /// <param name="imageUrl">
+        /// Source image URL. (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Picsart.ImageDescriberResponse> ImageDescriberAsync(
+            global::System.IO.Stream? image = default,
+            string? imagename = default,
+            string? imageUrl = default,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Describe Image<br/>
+        /// The image *Describer* service helps generate a detailed text description for the provided image (image2text).
+        /// </summary>
+        /// <param name="image">
+        /// Source image file (binary). (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
+        /// <param name="imagename">
+        /// Source image file (binary). (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
+        /// <param name="imageUrl">
+        /// Source image URL. (If this parameter is present, the other image source parameters must be empty.)
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Picsart.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Picsart.AutoSDKHttpResponse<global::Picsart.ImageDescriberResponse>> ImageDescriberAsResponseAsync(
+            global::System.IO.Stream? image = default,
+            string? imagename = default,
+            string? imageUrl = default,
+            global::Picsart.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
