@@ -193,5 +193,6 @@ namespace Picsart
         public ImageAdjustParameters()
         {
         }
+
     }
 }

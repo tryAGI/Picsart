@@ -161,5 +161,6 @@ namespace Picsart
         public ImageMasksParameters()
         {
         }
+
     }
 }

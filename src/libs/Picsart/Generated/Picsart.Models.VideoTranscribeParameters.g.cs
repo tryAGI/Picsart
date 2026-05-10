@@ -194,5 +194,6 @@ namespace Picsart
         public VideoTranscribeParameters()
         {
         }
+
     }
 }

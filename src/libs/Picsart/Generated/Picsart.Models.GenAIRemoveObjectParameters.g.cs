@@ -70,5 +70,6 @@ namespace Picsart
         public GenAIRemoveObjectParameters()
         {
         }
+
     }
 }

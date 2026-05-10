@@ -58,5 +58,6 @@ namespace Picsart
         public ImageCarsClassifierResponseData()
         {
         }
+
     }
 }

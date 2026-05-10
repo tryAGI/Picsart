@@ -210,5 +210,6 @@ namespace Picsart
         public VideoAdjustParameters()
         {
         }
+
     }
 }

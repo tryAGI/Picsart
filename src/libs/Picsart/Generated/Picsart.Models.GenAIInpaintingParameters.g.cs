@@ -107,5 +107,6 @@ namespace Picsart
         public GenAIInpaintingParameters()
         {
         }
+
     }
 }

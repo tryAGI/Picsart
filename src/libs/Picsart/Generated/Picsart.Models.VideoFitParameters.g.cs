@@ -109,5 +109,6 @@ namespace Picsart
         public VideoFitParameters()
         {
         }
+
     }
 }

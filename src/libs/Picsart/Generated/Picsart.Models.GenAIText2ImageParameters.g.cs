@@ -100,5 +100,6 @@ namespace Picsart
         public GenAIText2ImageParameters()
         {
         }
+
     }
 }

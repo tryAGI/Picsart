@@ -116,5 +116,6 @@ namespace Picsart
         public ImageStyleTransferParameters()
         {
         }
+
     }
 }

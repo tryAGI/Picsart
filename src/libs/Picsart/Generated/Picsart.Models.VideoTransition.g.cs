@@ -42,5 +42,6 @@ namespace Picsart
         public VideoTransition()
         {
         }
+
     }
 }
