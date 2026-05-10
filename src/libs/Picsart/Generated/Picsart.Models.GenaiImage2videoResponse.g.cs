@@ -51,5 +51,6 @@ namespace Picsart
         public GenaiImage2videoResponse()
         {
         }
+
     }
 }

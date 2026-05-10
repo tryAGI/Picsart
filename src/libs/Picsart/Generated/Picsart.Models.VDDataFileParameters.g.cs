@@ -74,5 +74,6 @@ namespace Picsart
         public VDDataFileParameters()
         {
         }
+
     }
 }

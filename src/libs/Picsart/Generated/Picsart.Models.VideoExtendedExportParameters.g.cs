@@ -41,5 +41,6 @@ namespace Picsart
         public VideoExtendedExportParameters()
         {
         }
+
     }
 }

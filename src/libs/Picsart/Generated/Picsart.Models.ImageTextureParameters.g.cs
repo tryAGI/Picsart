@@ -142,5 +142,6 @@ namespace Picsart
         public ImageTextureParameters()
         {
         }
+
     }
 }

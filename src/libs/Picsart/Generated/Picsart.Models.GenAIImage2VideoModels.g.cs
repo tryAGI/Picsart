@@ -48,5 +48,6 @@ namespace Picsart
         public GenAIImage2VideoModels()
         {
         }
+
     }
 }

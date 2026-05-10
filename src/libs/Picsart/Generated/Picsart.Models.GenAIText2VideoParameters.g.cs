@@ -120,5 +120,6 @@ namespace Picsart
         public GenAIText2VideoParameters()
         {
         }
+
     }
 }

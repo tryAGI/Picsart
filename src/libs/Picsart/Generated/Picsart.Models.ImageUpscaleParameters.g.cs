@@ -72,5 +72,6 @@ namespace Picsart
         public ImageUpscaleParameters()
         {
         }
+
     }
 }

@@ -205,5 +205,6 @@ namespace Picsart
         public ImageEditParameters()
         {
         }
+
     }
 }

@@ -308,5 +308,6 @@ namespace Picsart
         public ImageRemoveBackgroundParameters()
         {
         }
+
     }
 }

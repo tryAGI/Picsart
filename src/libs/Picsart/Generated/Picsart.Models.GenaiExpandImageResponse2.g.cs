@@ -48,5 +48,6 @@ namespace Picsart
         public GenaiExpandImageResponse2()
         {
         }
+
     }
 }

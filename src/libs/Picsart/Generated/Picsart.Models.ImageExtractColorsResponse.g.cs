@@ -50,5 +50,6 @@ namespace Picsart
         public ImageExtractColorsResponse()
         {
         }
+
     }
 }

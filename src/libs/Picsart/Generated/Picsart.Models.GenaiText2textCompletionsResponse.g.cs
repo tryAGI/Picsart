@@ -50,5 +50,6 @@ namespace Picsart
         public GenaiText2textCompletionsResponse()
         {
         }
+
     }
 }

@@ -48,5 +48,6 @@ namespace Picsart
         public VdExportVariableDataContentGetresultResponse2()
         {
         }
+
     }
 }
