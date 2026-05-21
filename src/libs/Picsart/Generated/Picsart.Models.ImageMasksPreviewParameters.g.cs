@@ -173,5 +173,6 @@ namespace Picsart
         public ImageMasksPreviewParameters()
         {
         }
+
     }
 }

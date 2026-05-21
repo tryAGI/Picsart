@@ -117,5 +117,6 @@ namespace Picsart
         public ImageSmartCropParameters()
         {
         }
+
     }
 }

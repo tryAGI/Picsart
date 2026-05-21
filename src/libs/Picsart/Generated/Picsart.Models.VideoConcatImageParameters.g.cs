@@ -68,5 +68,6 @@ namespace Picsart
         public VideoConcatImageParameters()
         {
         }
+
     }
 }

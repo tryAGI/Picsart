@@ -154,5 +154,6 @@ namespace Picsart
         public GenAILogoParameters()
         {
         }
+
     }
 }

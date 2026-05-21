@@ -121,5 +121,6 @@ namespace Picsart
         public ImageOverlayParameters()
         {
         }
+
     }
 }

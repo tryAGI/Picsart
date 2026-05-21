@@ -92,5 +92,6 @@ namespace Picsart
         public ImageColorTransferParameters()
         {
         }
+
     }
 }

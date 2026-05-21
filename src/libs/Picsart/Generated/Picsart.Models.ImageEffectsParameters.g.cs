@@ -270,5 +270,6 @@ namespace Picsart
         public ImageEffectsParameters()
         {
         }
+
     }
 }

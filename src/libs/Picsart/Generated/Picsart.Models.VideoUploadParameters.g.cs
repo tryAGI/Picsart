@@ -52,5 +52,6 @@ namespace Picsart
         public VideoUploadParameters()
         {
         }
+
     }
 }

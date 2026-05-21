@@ -104,10 +104,11 @@ namespace Picsart
             var __maxAttempts = global::Picsart.AutoSDKRequestOptionsSupport.GetMaxAttempts(
                 clientOptions: Options,
                 requestOptions: requestOptions,
-                supportsRetry: true);
+                supportsRetry: false);
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Picsart.PathBuilder(
                                 path: "/vd/variable-data-content/describe",
                                 baseUri: HttpClient.BaseAddress);
@@ -140,6 +141,7 @@ namespace Picsart
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
+
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             if (request.TemplateId != default)
                             {
@@ -147,7 +149,8 @@ namespace Picsart
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.TemplateId ?? string.Empty),
                                     name: "\"template_id\"");
-                            } 
+
+                            }
                             if (request.Template != default)
                             {
 
@@ -188,15 +191,19 @@ namespace Picsart
                                 {
                                     __contentTemplate.Headers.ContentDisposition.FileNameStar = null;
                                 }
-                            } 
+
+                            }
                             if (request.TemplateUrl != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.TemplateUrl ?? string.Empty),
                                     name: "\"template_url\"");
+
                             }
+
                             __httpRequest.Content = __httpRequestContent;
+
                 global::Picsart.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -238,6 +245,8 @@ namespace Picsart
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -248,6 +257,11 @@ namespace Picsart
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Picsart.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Picsart.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -265,6 +279,8 @@ namespace Picsart
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -274,8 +290,7 @@ namespace Picsart
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Picsart.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -284,6 +299,11 @@ namespace Picsart
                         __attempt < __maxAttempts &&
                         global::Picsart.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Picsart.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Picsart.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Picsart.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -300,14 +320,15 @@ namespace Picsart
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Picsart.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -347,6 +368,8 @@ namespace Picsart
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -367,6 +390,8 @@ namespace Picsart
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Bad Request
@@ -890,6 +915,7 @@ namespace Picsart
                                     return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VdDescribeVariableDataContentResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
                                         body: __value);
                                 }
                                 catch (global::System.Exception __ex)
@@ -923,6 +949,7 @@ namespace Picsart
                                     return new global::Picsart.AutoSDKHttpResponse<global::Picsart.VdDescribeVariableDataContentResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Picsart.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
                                         body: __value);
                                 }
                                 catch (global::System.Exception __ex)

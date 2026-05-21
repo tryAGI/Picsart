@@ -39,5 +39,6 @@ namespace Picsart
         public ImageListAiEffectNamesResponseDataItem()
         {
         }
+
     }
 }

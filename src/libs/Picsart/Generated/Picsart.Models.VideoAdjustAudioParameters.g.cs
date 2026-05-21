@@ -67,5 +67,6 @@ namespace Picsart
         public VideoAdjustAudioParameters()
         {
         }
+
     }
 }

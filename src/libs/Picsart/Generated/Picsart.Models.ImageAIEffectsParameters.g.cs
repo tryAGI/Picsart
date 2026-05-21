@@ -149,5 +149,6 @@ namespace Picsart
         public ImageAIEffectsParameters()
         {
         }
+
     }
 }

@@ -49,5 +49,6 @@ namespace Picsart
         public VideoApplyEffectResponse()
         {
         }
+
     }
 }
