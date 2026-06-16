@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+install_autosdk_cli() {
+  dotnet tool update --global autosdk.cli --prerelease >/dev/null 2>&1 || \
+    dotnet tool install --global autosdk.cli --prerelease
+}
+
 # OpenAPI spec: merged from 4 Picsart sub-API specs using specs/merge_specs.py
 # Then fixed with Python inline:
 #   - Remove integer enum on upscale_factor fields (causes int.x2 errors)
@@ -11,8 +16,7 @@ set -euo pipefail
 #   - Video Tools: https://apidocs.picsart.io/picsart-video-tools-api.yaml
 #   - GenAI Tools: https://apidocs.picsart.io/picsart-genai-tools-api.yaml
 #   - Variable Data: https://apidocs.picsart.io/picsart-variable-data-tools-api.yaml
-
-dotnet tool install --global autosdk.cli --prerelease
+install_autosdk_cli
 
 rm -rf Generated
 
