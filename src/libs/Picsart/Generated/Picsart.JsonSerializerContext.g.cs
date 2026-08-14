@@ -13,667 +13,6 @@ namespace Picsart
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::Picsart.JsonConverters.ImageExportParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageExportParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsParametersEffectNameJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsParametersEffectNameNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageLaserEngravingEffectParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageLaserEngravingEffectParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAIEffectsParametersEffectNameJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAIEffectsParametersEffectNameNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAIEffectsParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAIEffectsParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsPreviewsParametersEffectNameJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsPreviewsParametersEffectNameNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsPreviewsParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsPreviewsParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAdjustParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAdjustParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSelectiveBlurParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSelectiveBlurParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSmartCropParametersRatioJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSmartCropParametersRatioNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSmartCropParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSmartCropParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageZoomParametersAnchorPointJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageZoomParametersAnchorPointNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageZoomParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageZoomParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageColorTransferParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageColorTransferParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageStyleTransferParametersLevelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageStyleTransferParametersLevelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageStyleTransferParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageStyleTransferParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersOutputTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersOutputTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersScaleJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersScaleNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersShadowJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersShadowNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONOutputTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONOutputTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONScaleJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONScaleNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONShadowJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONShadowNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMultiMattingSegmentationParametersSegmentationClassJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMultiMattingSegmentationParametersSegmentationClassNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersBlendJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersBlendNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersMaskJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersMaskNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersMaskFlipJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersMaskFlipNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersBlendJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersBlendNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskItemJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskItemNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskFlipJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskFlipNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageTextureParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageTextureParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageTextureParametersPatternJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageTextureParametersPatternNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersProductTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersProductTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersImageTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersImageTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleEnhanceParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleEnhanceParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSurfacemapParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSurfacemapParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageFaceEnhanceParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageFaceEnhanceParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersCropAnchorJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersCropAnchorNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersFlipJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersFlipNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageOverlayParametersBlendModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageOverlayParametersBlendModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageOverlayParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageOverlayParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageWatermarkParametersAnchorPointJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageWatermarkParametersAnchorPointNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExportParametersExportFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExportParametersExportFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportQualityJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportQualityNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportCodecJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportCodecNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportAudioCodecJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportAudioCodecNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportColorSpaceJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportColorSpaceNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersLanguageJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersLanguageNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersGranularityJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersGranularityNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtractAudioParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtractAudioParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEffectsParametersEffectNameJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEffectsParametersEffectNameNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoVideoGetThumbnailParametersSourceJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoVideoGetThumbnailParametersSourceNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTransitionTransitionJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTransitionTransitionNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatImageParametersScaleJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatImageParametersScaleNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatSegmentsParametersTrimSegmentTransitionJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatSegmentsParametersTrimSegmentTransitionNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoWatermarkParametersAnchorPointJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoWatermarkParametersAnchorPointNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2TextModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2TextModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2VideoParametersQualityJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2VideoParametersQualityNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SpeechParametersLanguageJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SpeechParametersLanguageNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SpeechModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SpeechModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SoundModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SoundModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2ImageModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2ImageModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2StickerModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2StickerModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILogoModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILogoModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2VideoModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2VideoModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIImage2VideoModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIImage2VideoModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILaserEngravingParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILaserEngravingParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILaserEngravingModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILaserEngravingModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILogoParametersColorToneJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILogoParametersColorToneNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIInpaintingParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIInpaintingParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIInpaintingParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIInpaintingParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIRemoveObjectParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIRemoveObjectParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIRemoveObjectParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIRemoveObjectParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersDirectionJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersDirectionNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIBleedParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIBleedParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VDExportReplayParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VDExportReplayParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VDExportVariableDataContentParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VDExportVariableDataContentParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoRemoveBackgroundResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoRemoveBackgroundResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAdjustResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAdjustResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoApplyEffectResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoApplyEffectResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEditResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEditResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTrimResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTrimResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoCropResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoCropResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatHighlightsResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatHighlightsResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoFitResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoFitResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoMetadataResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoMetadataResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetThumbnailResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetThumbnailResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEncodeCtvResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEncodeCtvResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAdjustAudioResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAdjustAudioResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtractAudioResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtractAudioResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAddWatermarkResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAddWatermarkResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUploadResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUploadResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2imageResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2imageResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2imageGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2imageGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerLaserEngravingResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerLaserEngravingResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiGenerateLogoResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiGenerateLogoResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiGenerateLogoGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiGenerateLogoGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2videoResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2videoResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiImage2videoResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiImage2videoResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2videoGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2videoGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2speechResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2speechResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2soundResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2soundResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2audioGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2audioGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoConcatVideoParameters, global::Picsart.VideoConcatImageParameters, global::Picsart.VideoTransition>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageRemoveBackgroundParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleUltraParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleEnhanceParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageFaceEnhanceParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageEffectsParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageEffectsPreviewsParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageLaserEngravingEffectParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageAIEffectsParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageAdjustParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageSelectiveBlurParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageColorTransferParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageStyleTransferParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageMasksPreviewParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageMasksParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageTextureParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageTextureParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageVectorizerParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageSurfacemapParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageWatermarkParameters, global::Picsart.ImageExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageEditParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageSmartCropParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageOverlayParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageZoomParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageMultiMattingSegmentationParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoRemoveBackgroundParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoAdjustParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoEffectsParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoEditParameters, global::Picsart.VideoExtendedExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoTrimParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoCropParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoConcatParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoConcatSegmentsParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoFitParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoVideoGetThumbnailParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoImageParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoAdjustAudioParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoExtractAudioParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoTranscribeFileParameters, global::Picsart.VideoTranscribeParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoWatermarkParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2TextCompletionsParameters, global::Picsart.GenAIText2TextModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2ImageParameters, global::Picsart.GenAIText2ImageModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2ImageParameters, global::Picsart.GenAIText2StickerModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2ImageParameters, global::Picsart.GenAILaserEngravingParameters, global::Picsart.GenAILaserEngravingModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAILogoParameters, global::Picsart.GenAILogoModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIMaskParameters, global::Picsart.GenAIInpaintingParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIMaskParameters, global::Picsart.GenAIInpaintingParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIMaskParameters, global::Picsart.GenAIRemoveObjectParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIInpaintingParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIExpandParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIBleedParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2VideoParameters, global::Picsart.GenAIText2VideoModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIText2VideoParameters, global::Picsart.GenAIImage2VideoModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2SpeechParameters, global::Picsart.GenAIText2SpeechModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2SoundParameters, global::Picsart.GenAIText2SoundModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VDFileParameters, global::Picsart.VDExportReplayParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VDTemplateParameters, global::Picsart.VDDataFileParameters, global::Picsart.VDExportVariableDataContentParameters>),
-
-            typeof(global::Picsart.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
@@ -1186,667 +525,6 @@ namespace Picsart
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::Picsart.JsonConverters.ImageExportParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageExportParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsParametersEffectNameJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsParametersEffectNameNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageLaserEngravingEffectParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageLaserEngravingEffectParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAIEffectsParametersEffectNameJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAIEffectsParametersEffectNameNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAIEffectsParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAIEffectsParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsPreviewsParametersEffectNameJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsPreviewsParametersEffectNameNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsPreviewsParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEffectsPreviewsParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAdjustParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageAdjustParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSelectiveBlurParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSelectiveBlurParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSmartCropParametersRatioJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSmartCropParametersRatioNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSmartCropParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSmartCropParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageZoomParametersAnchorPointJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageZoomParametersAnchorPointNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageZoomParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageZoomParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageColorTransferParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageColorTransferParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageStyleTransferParametersLevelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageStyleTransferParametersLevelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageStyleTransferParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageStyleTransferParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersOutputTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersOutputTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersScaleJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersScaleNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersShadowJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersShadowNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONOutputTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONOutputTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONScaleJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONScaleNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONShadowJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONShadowNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMultiMattingSegmentationParametersSegmentationClassJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMultiMattingSegmentationParametersSegmentationClassNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersBlendJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersBlendNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersMaskJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersMaskNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersMaskFlipJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksParametersMaskFlipNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersBlendJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersBlendNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskItemJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskItemNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskFlipJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskFlipNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageTextureParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageTextureParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageTextureParametersPatternJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageTextureParametersPatternNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersProductTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersProductTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersImageTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersImageTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleUltraParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleEnhanceParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageUpscaleEnhanceParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSurfacemapParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageSurfacemapParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageFaceEnhanceParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageFaceEnhanceParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersCropAnchorJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersCropAnchorNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersFlipJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageEditParametersFlipNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageOverlayParametersBlendModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageOverlayParametersBlendModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageOverlayParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageOverlayParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageWatermarkParametersAnchorPointJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageWatermarkParametersAnchorPointNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExportParametersExportFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExportParametersExportFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportQualityJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportQualityNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportCodecJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportCodecNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportAudioCodecJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportAudioCodecNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportColorSpaceJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtendedExportParametersExportColorSpaceNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersLanguageJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersLanguageNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersGranularityJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeParametersGranularityNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtractAudioParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtractAudioParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEffectsParametersEffectNameJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEffectsParametersEffectNameNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoVideoGetThumbnailParametersSourceJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoVideoGetThumbnailParametersSourceNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTransitionTransitionJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTransitionTransitionNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatImageParametersScaleJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatImageParametersScaleNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatSegmentsParametersTrimSegmentTransitionJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatSegmentsParametersTrimSegmentTransitionNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoWatermarkParametersAnchorPointJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoWatermarkParametersAnchorPointNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2TextModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2TextModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2VideoParametersQualityJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2VideoParametersQualityNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SpeechParametersLanguageJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SpeechParametersLanguageNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SpeechModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SpeechModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SoundModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2SoundModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2ImageModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2ImageModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2StickerModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2StickerModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILogoModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILogoModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2VideoModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIText2VideoModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIImage2VideoModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIImage2VideoModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILaserEngravingParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILaserEngravingParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILaserEngravingModelsModelJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILaserEngravingModelsModelNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILogoParametersColorToneJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAILogoParametersColorToneNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIInpaintingParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIInpaintingParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIInpaintingParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIInpaintingParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIRemoveObjectParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIRemoveObjectParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIRemoveObjectParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIRemoveObjectParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersDirectionJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersDirectionNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersModeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIExpandParametersModeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIBleedParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenAIBleedParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VDExportReplayParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VDExportReplayParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VDExportVariableDataContentParametersFormatJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VDExportVariableDataContentParametersFormatNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoRemoveBackgroundResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoRemoveBackgroundResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAdjustResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAdjustResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoApplyEffectResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoApplyEffectResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEditResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEditResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTrimResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTrimResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoCropResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoCropResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatHighlightsResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoConcatHighlightsResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoFitResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoFitResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoMetadataResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoMetadataResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetThumbnailResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetThumbnailResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEncodeCtvResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoEncodeCtvResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAdjustAudioResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAdjustAudioResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtractAudioResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoExtractAudioResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAddWatermarkResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoAddWatermarkResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2JsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2NullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUploadResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VideoUploadResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2imageResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2imageResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2imageGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2imageGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerLaserEngravingResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerLaserEngravingResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2stickerGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiGenerateLogoResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiGenerateLogoResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiGenerateLogoGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiGenerateLogoGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2videoResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2videoResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiImage2videoResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiImage2videoResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2videoGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2videoGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2speechResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2speechResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2soundResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2soundResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2audioGetresultResponseStatusJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.GenaiText2audioGetresultResponseStatusNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeNullableJsonConverter),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoConcatVideoParameters, global::Picsart.VideoConcatImageParameters, global::Picsart.VideoTransition>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageRemoveBackgroundParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleUltraParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleEnhanceParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageFaceEnhanceParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageEffectsParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageEffectsPreviewsParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageLaserEngravingEffectParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageAIEffectsParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageAdjustParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageSelectiveBlurParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageColorTransferParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageStyleTransferParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageMasksPreviewParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageMasksParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageTextureParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageTextureParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageVectorizerParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageSurfacemapParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageWatermarkParameters, global::Picsart.ImageExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageEditParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageSmartCropParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageOverlayParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageZoomParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageMultiMattingSegmentationParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoRemoveBackgroundParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoAdjustParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoEffectsParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoEditParameters, global::Picsart.VideoExtendedExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoTrimParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoCropParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoConcatParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoConcatSegmentsParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoFitParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoVideoGetThumbnailParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoImageParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoAdjustAudioParameters, global::Picsart.VideoExportParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoExtractAudioParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoTranscribeFileParameters, global::Picsart.VideoTranscribeParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoVideoParameters, global::Picsart.VideoWatermarkParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2TextCompletionsParameters, global::Picsart.GenAIText2TextModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2ImageParameters, global::Picsart.GenAIText2ImageModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2ImageParameters, global::Picsart.GenAIText2StickerModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2ImageParameters, global::Picsart.GenAILaserEngravingParameters, global::Picsart.GenAILaserEngravingModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAILogoParameters, global::Picsart.GenAILogoModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIMaskParameters, global::Picsart.GenAIInpaintingParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIMaskParameters, global::Picsart.GenAIInpaintingParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIMaskParameters, global::Picsart.GenAIRemoveObjectParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIInpaintingParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIExpandParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIBleedParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2VideoParameters, global::Picsart.GenAIText2VideoModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIImageParameters, global::Picsart.GenAIText2VideoParameters, global::Picsart.GenAIImage2VideoModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2SpeechParameters, global::Picsart.GenAIText2SpeechModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.GenAIText2SoundParameters, global::Picsart.GenAIText2SoundModels>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VDFileParameters, global::Picsart.VDExportReplayParameters>),
-
-            typeof(global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VDTemplateParameters, global::Picsart.VDDataFileParameters, global::Picsart.VDExportVariableDataContentParameters>),
-
-            typeof(global::Picsart.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageZoomParametersFormat?), TypeInfoPropertyName = "NullableImageZoomParametersFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageColorTransferParametersFormat?), TypeInfoPropertyName = "NullableImageColorTransferParametersFormat2")]
@@ -2059,11 +737,7 @@ namespace Picsart
     /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
-        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
-            SourceGenerationContextChunk0.Default,
-
-            SourceGenerationContextChunk1.Default
-            );
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
@@ -2093,278 +767,6 @@ namespace Picsart
                 DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
                 TypeInfoResolver = Resolver,
             };
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageExportParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageExportParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEffectsParametersEffectNameJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEffectsParametersEffectNameNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEffectsParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEffectsParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageLaserEngravingEffectParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageLaserEngravingEffectParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageAIEffectsParametersEffectNameJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageAIEffectsParametersEffectNameNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageAIEffectsParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageAIEffectsParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEffectsPreviewsParametersEffectNameJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEffectsPreviewsParametersEffectNameNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEffectsPreviewsParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEffectsPreviewsParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageAdjustParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageAdjustParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageSelectiveBlurParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageSelectiveBlurParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageSmartCropParametersRatioJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageSmartCropParametersRatioNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageSmartCropParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageSmartCropParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageZoomParametersAnchorPointJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageZoomParametersAnchorPointNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageZoomParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageZoomParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageColorTransferParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageColorTransferParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageStyleTransferParametersLevelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageStyleTransferParametersLevelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageStyleTransferParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageStyleTransferParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersOutputTypeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersOutputTypeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersScaleJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersScaleNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersShadowJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersShadowNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONOutputTypeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONOutputTypeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONScaleJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONScaleNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONShadowJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONShadowNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMultiMattingSegmentationParametersSegmentationClassJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMultiMattingSegmentationParametersSegmentationClassNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksParametersBlendJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksParametersBlendNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksParametersMaskJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksParametersMaskNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksParametersMaskFlipJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksParametersMaskFlipNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksPreviewParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksPreviewParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksPreviewParametersBlendJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksPreviewParametersBlendNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskItemJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskItemNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskFlipJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskFlipNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageTextureParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageTextureParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageTextureParametersPatternJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageTextureParametersPatternNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleUltraParametersProductTypeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleUltraParametersProductTypeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleUltraParametersImageTypeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleUltraParametersImageTypeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleUltraParametersModeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleUltraParametersModeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleUltraParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleUltraParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleEnhanceParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageUpscaleEnhanceParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageSurfacemapParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageSurfacemapParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageFaceEnhanceParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageFaceEnhanceParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEditParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEditParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEditParametersModeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEditParametersModeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEditParametersCropAnchorJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEditParametersCropAnchorNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEditParametersFlipJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageEditParametersFlipNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageOverlayParametersBlendModeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageOverlayParametersBlendModeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageOverlayParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageOverlayParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageWatermarkParametersAnchorPointJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageWatermarkParametersAnchorPointNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExportParametersExportFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExportParametersExportFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportQualityJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportQualityNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportCodecJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportCodecNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportAudioCodecJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportAudioCodecNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportColorSpaceJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtendedExportParametersExportColorSpaceNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeParametersLanguageJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeParametersLanguageNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeParametersGranularityJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeParametersGranularityNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtractAudioParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtractAudioParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoEffectsParametersEffectNameJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoEffectsParametersEffectNameNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoVideoGetThumbnailParametersSourceJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoVideoGetThumbnailParametersSourceNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTransitionTransitionJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTransitionTransitionNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoConcatImageParametersScaleJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoConcatImageParametersScaleNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoConcatSegmentsParametersTrimSegmentTransitionJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoConcatSegmentsParametersTrimSegmentTransitionNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoWatermarkParametersAnchorPointJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoWatermarkParametersAnchorPointNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2TextModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2TextModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2VideoParametersQualityJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2VideoParametersQualityNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2SpeechParametersLanguageJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2SpeechParametersLanguageNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2SpeechModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2SpeechModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2SoundModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2SoundModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2ImageModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2ImageModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2StickerModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2StickerModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAILogoModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAILogoModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2VideoModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIText2VideoModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIImage2VideoModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIImage2VideoModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAILaserEngravingParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAILaserEngravingParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAILaserEngravingModelsModelJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAILaserEngravingModelsModelNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAILogoParametersColorToneJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAILogoParametersColorToneNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIInpaintingParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIInpaintingParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIInpaintingParametersModeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIInpaintingParametersModeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIRemoveObjectParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIRemoveObjectParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIRemoveObjectParametersModeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIRemoveObjectParametersModeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIExpandParametersDirectionJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIExpandParametersDirectionNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIExpandParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIExpandParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIExpandParametersModeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIExpandParametersModeNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIBleedParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenAIBleedParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VDExportReplayParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VDExportReplayParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VDExportVariableDataContentParametersFormatJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VDExportVariableDataContentParametersFormatNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoUpscaleFpsResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoUpscaleFpsResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2JsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2NullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoRemoveBackgroundResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoRemoveBackgroundResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoAdjustResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoAdjustResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoApplyEffectResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoApplyEffectResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoEditResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoEditResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTrimResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTrimResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoCropResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoCropResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoConcatResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoConcatResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoConcatHighlightsResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoConcatHighlightsResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoFitResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoFitResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoMetadataResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoMetadataResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetThumbnailResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetThumbnailResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoSetThumbnailResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoSetThumbnailResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2JsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2NullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoEncodeCtvResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoEncodeCtvResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoAdjustAudioResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoAdjustAudioResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtractAudioResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoExtractAudioResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeAudioResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeAudioResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2JsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2NullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoAddWatermarkResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoAddWatermarkResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetresultResponseStatus2JsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetresultResponseStatus2NullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2JsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2NullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoUploadResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VideoUploadResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2imageResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2imageResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2imageGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2imageGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2stickerResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2stickerResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2stickerLaserEngravingResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2stickerLaserEngravingResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2stickerGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2stickerGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiGenerateLogoResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiGenerateLogoResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiGenerateLogoGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiGenerateLogoGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2videoResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2videoResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiImage2videoResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiImage2videoResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2videoGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2videoGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2speechResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2speechResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2soundResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2soundResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2audioGetresultResponseStatusJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.GenaiText2audioGetresultResponseStatusNullableJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeJsonConverter());
-            options.Converters.Add(new global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeNullableJsonConverter());
             options.Converters.Add(new global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VideoConcatVideoParameters, global::Picsart.VideoConcatImageParameters, global::Picsart.VideoTransition>());
             options.Converters.Add(new global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageRemoveBackgroundParameters>());
             options.Converters.Add(new global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.ImageImageParameters, global::Picsart.ImageUpscaleParameters>());
@@ -2425,7 +827,1974 @@ namespace Picsart
             options.Converters.Add(new global::Picsart.JsonConverters.AllOfJsonConverter<global::Picsart.VDTemplateParameters, global::Picsart.VDDataFileParameters, global::Picsart.VDExportVariableDataContentParameters>());
             options.Converters.Add(new global::Picsart.JsonConverters.UnixTimestampJsonConverter());
 
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
+
             return options;
+        }
+
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Picsart.ImageExportParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageExportParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEffectsParametersEffectName)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEffectsParametersEffectName?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEffectsParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEffectsParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageLaserEngravingEffectParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageLaserEngravingEffectParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageAIEffectsParametersEffectName)
+
+                    || typeToConvert == typeof(global::Picsart.ImageAIEffectsParametersEffectName?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageAIEffectsParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageAIEffectsParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEffectsPreviewsParametersEffectName)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEffectsPreviewsParametersEffectName?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEffectsPreviewsParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEffectsPreviewsParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageAdjustParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageAdjustParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageSelectiveBlurParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageSelectiveBlurParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageSmartCropParametersRatio)
+
+                    || typeToConvert == typeof(global::Picsart.ImageSmartCropParametersRatio?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageSmartCropParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageSmartCropParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageZoomParametersAnchorPoint)
+
+                    || typeToConvert == typeof(global::Picsart.ImageZoomParametersAnchorPoint?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageZoomParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageZoomParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageColorTransferParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageColorTransferParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageStyleTransferParametersLevel)
+
+                    || typeToConvert == typeof(global::Picsart.ImageStyleTransferParametersLevel?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageStyleTransferParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageStyleTransferParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersOutputType)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersOutputType?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersScale)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersScale?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersShadow)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersShadow?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersModel)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersModel?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONOutputType)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONOutputType?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONScale)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONScale?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONShadow)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONShadow?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONModel)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONModel?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMultiMattingSegmentationParametersSegmentationClass)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMultiMattingSegmentationParametersSegmentationClass?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksParametersBlend)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksParametersBlend?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksParametersMask)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksParametersMask?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksParametersMaskFlip)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksParametersMaskFlip?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersBlend)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersBlend?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersMaskItem)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersMaskItem?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersMaskFlip)
+
+                    || typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersMaskFlip?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageTextureParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageTextureParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageTextureParametersPattern)
+
+                    || typeToConvert == typeof(global::Picsart.ImageTextureParametersPattern?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersProductType)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersProductType?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersImageType)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersImageType?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersMode)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersMode?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleEnhanceParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageUpscaleEnhanceParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageSurfacemapParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageSurfacemapParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageFaceEnhanceParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageFaceEnhanceParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEditParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEditParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEditParametersMode)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEditParametersMode?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEditParametersCropAnchor)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEditParametersCropAnchor?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEditParametersFlip)
+
+                    || typeToConvert == typeof(global::Picsart.ImageEditParametersFlip?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageOverlayParametersBlendMode)
+
+                    || typeToConvert == typeof(global::Picsart.ImageOverlayParametersBlendMode?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageOverlayParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.ImageOverlayParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageWatermarkParametersAnchorPoint)
+
+                    || typeToConvert == typeof(global::Picsart.ImageWatermarkParametersAnchorPoint?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExportParametersExportFormat)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExportParametersExportFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportFormat)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportQuality)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportQuality?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportCodec)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportCodec?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportAudioCodec)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportAudioCodec?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportColorSpace)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportColorSpace?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeParametersLanguage)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeParametersLanguage?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeParametersGranularity)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeParametersGranularity?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtractAudioParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtractAudioParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoEffectsParametersEffectName)
+
+                    || typeToConvert == typeof(global::Picsart.VideoEffectsParametersEffectName?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoVideoGetThumbnailParametersSource)
+
+                    || typeToConvert == typeof(global::Picsart.VideoVideoGetThumbnailParametersSource?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTransitionTransition)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTransitionTransition?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoConcatImageParametersScale)
+
+                    || typeToConvert == typeof(global::Picsart.VideoConcatImageParametersScale?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoConcatSegmentsParametersTrimSegmentTransition)
+
+                    || typeToConvert == typeof(global::Picsart.VideoConcatSegmentsParametersTrimSegmentTransition?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoWatermarkParametersAnchorPoint)
+
+                    || typeToConvert == typeof(global::Picsart.VideoWatermarkParametersAnchorPoint?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2TextModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2TextModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2VideoParametersQuality)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2VideoParametersQuality?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2SpeechParametersLanguage)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2SpeechParametersLanguage?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2SpeechModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2SpeechModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2SoundModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2SoundModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2ImageModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2ImageModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2StickerModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2StickerModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAILogoModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAILogoModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2VideoModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIText2VideoModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIImage2VideoModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIImage2VideoModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAILaserEngravingParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.GenAILaserEngravingParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAILaserEngravingModelsModel)
+
+                    || typeToConvert == typeof(global::Picsart.GenAILaserEngravingModelsModel?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAILogoParametersColorTone)
+
+                    || typeToConvert == typeof(global::Picsart.GenAILogoParametersColorTone?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIInpaintingParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIInpaintingParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIInpaintingParametersMode)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIInpaintingParametersMode?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIRemoveObjectParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIRemoveObjectParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIRemoveObjectParametersMode)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIRemoveObjectParametersMode?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIExpandParametersDirection)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIExpandParametersDirection?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIExpandParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIExpandParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIExpandParametersMode)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIExpandParametersMode?)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIBleedParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.GenAIBleedParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.VDExportReplayParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.VDExportReplayParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.VDExportVariableDataContentParametersFormat)
+
+                    || typeToConvert == typeof(global::Picsart.VDExportVariableDataContentParametersFormat?)
+
+                    || typeToConvert == typeof(global::Picsart.ImageCarsClassifierResponseDataClass)
+
+                    || typeToConvert == typeof(global::Picsart.ImageCarsClassifierResponseDataClass?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2)
+
+                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoRemoveBackgroundResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoRemoveBackgroundResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoAdjustResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoAdjustResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoApplyEffectResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoApplyEffectResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoEditResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoEditResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTrimResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTrimResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoCropResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoCropResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoConcatResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoConcatResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoConcatHighlightsResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoConcatHighlightsResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoFitResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoFitResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoMetadataResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoMetadataResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetThumbnailResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetThumbnailResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2)
+
+                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoEncodeCtvResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoEncodeCtvResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoAdjustAudioResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoAdjustAudioResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtractAudioResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoExtractAudioResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2)
+
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoAddWatermarkResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoAddWatermarkResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus2)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus2?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus2)
+
+                    || typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus2?)
+
+                    || typeToConvert == typeof(global::Picsart.VideoUploadResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.VideoUploadResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2imageResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2imageResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2imageGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2imageGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2stickerResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2stickerResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2stickerLaserEngravingResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2stickerLaserEngravingResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2stickerGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2stickerGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiGenerateLogoResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiGenerateLogoResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiGenerateLogoGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiGenerateLogoGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2videoResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2videoResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiImage2videoResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiImage2videoResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2videoGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2videoGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2speechResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2speechResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2soundResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2soundResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2audioGetresultResponseStatus)
+
+                    || typeToConvert == typeof(global::Picsart.GenaiText2audioGetresultResponseStatus?)
+
+                    || typeToConvert == typeof(global::Picsart.VdDescribeVariableDataContentResponseDataTagType)
+
+                    || typeToConvert == typeof(global::Picsart.VdDescribeVariableDataContentResponseDataTagType?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Picsart.ImageExportParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageExportParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageExportParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageExportParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEffectsParametersEffectName))
+                {
+                    return new global::Picsart.JsonConverters.ImageEffectsParametersEffectNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEffectsParametersEffectName?))
+                {
+                    return new global::Picsart.JsonConverters.ImageEffectsParametersEffectNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEffectsParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageEffectsParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEffectsParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageEffectsParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageLaserEngravingEffectParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageLaserEngravingEffectParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageLaserEngravingEffectParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageLaserEngravingEffectParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageAIEffectsParametersEffectName))
+                {
+                    return new global::Picsart.JsonConverters.ImageAIEffectsParametersEffectNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageAIEffectsParametersEffectName?))
+                {
+                    return new global::Picsart.JsonConverters.ImageAIEffectsParametersEffectNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageAIEffectsParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageAIEffectsParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageAIEffectsParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageAIEffectsParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEffectsPreviewsParametersEffectName))
+                {
+                    return new global::Picsart.JsonConverters.ImageEffectsPreviewsParametersEffectNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEffectsPreviewsParametersEffectName?))
+                {
+                    return new global::Picsart.JsonConverters.ImageEffectsPreviewsParametersEffectNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEffectsPreviewsParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageEffectsPreviewsParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEffectsPreviewsParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageEffectsPreviewsParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageAdjustParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageAdjustParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageAdjustParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageAdjustParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageSelectiveBlurParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageSelectiveBlurParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageSelectiveBlurParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageSelectiveBlurParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageSmartCropParametersRatio))
+                {
+                    return new global::Picsart.JsonConverters.ImageSmartCropParametersRatioJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageSmartCropParametersRatio?))
+                {
+                    return new global::Picsart.JsonConverters.ImageSmartCropParametersRatioNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageSmartCropParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageSmartCropParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageSmartCropParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageSmartCropParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageZoomParametersAnchorPoint))
+                {
+                    return new global::Picsart.JsonConverters.ImageZoomParametersAnchorPointJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageZoomParametersAnchorPoint?))
+                {
+                    return new global::Picsart.JsonConverters.ImageZoomParametersAnchorPointNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageZoomParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageZoomParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageZoomParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageZoomParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageColorTransferParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageColorTransferParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageColorTransferParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageColorTransferParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageStyleTransferParametersLevel))
+                {
+                    return new global::Picsart.JsonConverters.ImageStyleTransferParametersLevelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageStyleTransferParametersLevel?))
+                {
+                    return new global::Picsart.JsonConverters.ImageStyleTransferParametersLevelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageStyleTransferParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageStyleTransferParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageStyleTransferParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageStyleTransferParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersOutputType))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersOutputTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersOutputType?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersOutputTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersScale))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersScaleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersScale?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersScaleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersShadow))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersShadowJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersShadow?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersShadowNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersModel))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersModel?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONOutputType))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONOutputTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONOutputType?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONOutputTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONScale))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONScaleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONScale?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONScaleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONShadow))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONShadowJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONShadow?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONShadowNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONModel))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONModel?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageRemoveBackgroundParametersJSONFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageRemoveBackgroundParametersJSONFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMultiMattingSegmentationParametersSegmentationClass))
+                {
+                    return new global::Picsart.JsonConverters.ImageMultiMattingSegmentationParametersSegmentationClassJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMultiMattingSegmentationParametersSegmentationClass?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMultiMattingSegmentationParametersSegmentationClassNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksParametersBlend))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksParametersBlendJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksParametersBlend?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksParametersBlendNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksParametersMask))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksParametersMaskJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksParametersMask?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksParametersMaskNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksParametersMaskFlip))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksParametersMaskFlipJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksParametersMaskFlip?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksParametersMaskFlipNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksPreviewParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksPreviewParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersBlend))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksPreviewParametersBlendJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersBlend?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksPreviewParametersBlendNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersMaskItem))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersMaskItem?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersMaskFlip))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskFlipJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageMasksPreviewParametersMaskFlip?))
+                {
+                    return new global::Picsart.JsonConverters.ImageMasksPreviewParametersMaskFlipNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageTextureParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageTextureParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageTextureParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageTextureParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageTextureParametersPattern))
+                {
+                    return new global::Picsart.JsonConverters.ImageTextureParametersPatternJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageTextureParametersPattern?))
+                {
+                    return new global::Picsart.JsonConverters.ImageTextureParametersPatternNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersProductType))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleUltraParametersProductTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersProductType?))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleUltraParametersProductTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersImageType))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleUltraParametersImageTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersImageType?))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleUltraParametersImageTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersMode))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleUltraParametersModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersMode?))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleUltraParametersModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleUltraParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleUltraParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleUltraParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleEnhanceParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleEnhanceParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageUpscaleEnhanceParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageUpscaleEnhanceParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageSurfacemapParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageSurfacemapParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageSurfacemapParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageSurfacemapParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageFaceEnhanceParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageFaceEnhanceParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageFaceEnhanceParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageFaceEnhanceParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEditParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageEditParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEditParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageEditParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEditParametersMode))
+                {
+                    return new global::Picsart.JsonConverters.ImageEditParametersModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEditParametersMode?))
+                {
+                    return new global::Picsart.JsonConverters.ImageEditParametersModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEditParametersCropAnchor))
+                {
+                    return new global::Picsart.JsonConverters.ImageEditParametersCropAnchorJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEditParametersCropAnchor?))
+                {
+                    return new global::Picsart.JsonConverters.ImageEditParametersCropAnchorNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEditParametersFlip))
+                {
+                    return new global::Picsart.JsonConverters.ImageEditParametersFlipJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageEditParametersFlip?))
+                {
+                    return new global::Picsart.JsonConverters.ImageEditParametersFlipNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageOverlayParametersBlendMode))
+                {
+                    return new global::Picsart.JsonConverters.ImageOverlayParametersBlendModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageOverlayParametersBlendMode?))
+                {
+                    return new global::Picsart.JsonConverters.ImageOverlayParametersBlendModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageOverlayParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.ImageOverlayParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageOverlayParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.ImageOverlayParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageWatermarkParametersAnchorPoint))
+                {
+                    return new global::Picsart.JsonConverters.ImageWatermarkParametersAnchorPointJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageWatermarkParametersAnchorPoint?))
+                {
+                    return new global::Picsart.JsonConverters.ImageWatermarkParametersAnchorPointNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExportParametersExportFormat))
+                {
+                    return new global::Picsart.JsonConverters.VideoExportParametersExportFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExportParametersExportFormat?))
+                {
+                    return new global::Picsart.JsonConverters.VideoExportParametersExportFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportFormat))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportFormat?))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportQuality))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportQualityJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportQuality?))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportQualityNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportCodec))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportCodecJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportCodec?))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportCodecNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportAudioCodec))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportAudioCodecJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportAudioCodec?))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportAudioCodecNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportColorSpace))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportColorSpaceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtendedExportParametersExportColorSpace?))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtendedExportParametersExportColorSpaceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeParametersLanguage))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeParametersLanguageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeParametersLanguage?))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeParametersLanguageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeParametersGranularity))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeParametersGranularityJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeParametersGranularity?))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeParametersGranularityNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtractAudioParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtractAudioParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtractAudioParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtractAudioParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoEffectsParametersEffectName))
+                {
+                    return new global::Picsart.JsonConverters.VideoEffectsParametersEffectNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoEffectsParametersEffectName?))
+                {
+                    return new global::Picsart.JsonConverters.VideoEffectsParametersEffectNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoVideoGetThumbnailParametersSource))
+                {
+                    return new global::Picsart.JsonConverters.VideoVideoGetThumbnailParametersSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoVideoGetThumbnailParametersSource?))
+                {
+                    return new global::Picsart.JsonConverters.VideoVideoGetThumbnailParametersSourceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTransitionTransition))
+                {
+                    return new global::Picsart.JsonConverters.VideoTransitionTransitionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTransitionTransition?))
+                {
+                    return new global::Picsart.JsonConverters.VideoTransitionTransitionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoConcatImageParametersScale))
+                {
+                    return new global::Picsart.JsonConverters.VideoConcatImageParametersScaleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoConcatImageParametersScale?))
+                {
+                    return new global::Picsart.JsonConverters.VideoConcatImageParametersScaleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoConcatSegmentsParametersTrimSegmentTransition))
+                {
+                    return new global::Picsart.JsonConverters.VideoConcatSegmentsParametersTrimSegmentTransitionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoConcatSegmentsParametersTrimSegmentTransition?))
+                {
+                    return new global::Picsart.JsonConverters.VideoConcatSegmentsParametersTrimSegmentTransitionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoWatermarkParametersAnchorPoint))
+                {
+                    return new global::Picsart.JsonConverters.VideoWatermarkParametersAnchorPointJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoWatermarkParametersAnchorPoint?))
+                {
+                    return new global::Picsart.JsonConverters.VideoWatermarkParametersAnchorPointNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2TextModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2TextModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2TextModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2TextModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2VideoParametersQuality))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2VideoParametersQualityJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2VideoParametersQuality?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2VideoParametersQualityNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2SpeechParametersLanguage))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2SpeechParametersLanguageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2SpeechParametersLanguage?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2SpeechParametersLanguageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2SpeechModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2SpeechModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2SpeechModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2SpeechModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2SoundModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2SoundModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2SoundModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2SoundModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2ImageModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2ImageModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2ImageModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2ImageModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2StickerModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2StickerModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2StickerModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2StickerModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAILogoModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAILogoModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAILogoModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAILogoModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2VideoModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2VideoModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIText2VideoModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIText2VideoModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIImage2VideoModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAIImage2VideoModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIImage2VideoModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIImage2VideoModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAILaserEngravingParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.GenAILaserEngravingParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAILaserEngravingParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.GenAILaserEngravingParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAILaserEngravingModelsModel))
+                {
+                    return new global::Picsart.JsonConverters.GenAILaserEngravingModelsModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAILaserEngravingModelsModel?))
+                {
+                    return new global::Picsart.JsonConverters.GenAILaserEngravingModelsModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAILogoParametersColorTone))
+                {
+                    return new global::Picsart.JsonConverters.GenAILogoParametersColorToneJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAILogoParametersColorTone?))
+                {
+                    return new global::Picsart.JsonConverters.GenAILogoParametersColorToneNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIInpaintingParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.GenAIInpaintingParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIInpaintingParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIInpaintingParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIInpaintingParametersMode))
+                {
+                    return new global::Picsart.JsonConverters.GenAIInpaintingParametersModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIInpaintingParametersMode?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIInpaintingParametersModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIRemoveObjectParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.GenAIRemoveObjectParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIRemoveObjectParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIRemoveObjectParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIRemoveObjectParametersMode))
+                {
+                    return new global::Picsart.JsonConverters.GenAIRemoveObjectParametersModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIRemoveObjectParametersMode?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIRemoveObjectParametersModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIExpandParametersDirection))
+                {
+                    return new global::Picsart.JsonConverters.GenAIExpandParametersDirectionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIExpandParametersDirection?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIExpandParametersDirectionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIExpandParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.GenAIExpandParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIExpandParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIExpandParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIExpandParametersMode))
+                {
+                    return new global::Picsart.JsonConverters.GenAIExpandParametersModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIExpandParametersMode?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIExpandParametersModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIBleedParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.GenAIBleedParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenAIBleedParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.GenAIBleedParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VDExportReplayParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.VDExportReplayParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VDExportReplayParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.VDExportReplayParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VDExportVariableDataContentParametersFormat))
+                {
+                    return new global::Picsart.JsonConverters.VDExportVariableDataContentParametersFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VDExportVariableDataContentParametersFormat?))
+                {
+                    return new global::Picsart.JsonConverters.VDExportVariableDataContentParametersFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageCarsClassifierResponseDataClass))
+                {
+                    return new global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.ImageCarsClassifierResponseDataClass?))
+                {
+                    return new global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoUpscaleFpsResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoUpscaleFpsResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2))
+                {
+                    return new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2?))
+                {
+                    return new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoRemoveBackgroundResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoRemoveBackgroundResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoRemoveBackgroundResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoRemoveBackgroundResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoAdjustResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoAdjustResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoAdjustResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoAdjustResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoApplyEffectResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoApplyEffectResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoApplyEffectResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoApplyEffectResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoEditResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoEditResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoEditResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoEditResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTrimResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoTrimResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTrimResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoTrimResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoCropResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoCropResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoCropResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoCropResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoConcatResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoConcatResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoConcatResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoConcatResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoConcatHighlightsResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoConcatHighlightsResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoConcatHighlightsResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoConcatHighlightsResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoFitResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoFitResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoFitResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoFitResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoMetadataResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoMetadataResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoMetadataResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoMetadataResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetThumbnailResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetThumbnailResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetThumbnailResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetThumbnailResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoSetThumbnailResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoSetThumbnailResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2))
+                {
+                    return new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2?))
+                {
+                    return new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoEncodeCtvResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoEncodeCtvResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoEncodeCtvResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoEncodeCtvResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoAdjustAudioResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoAdjustAudioResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoAdjustAudioResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoAdjustAudioResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtractAudioResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtractAudioResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoExtractAudioResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoExtractAudioResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeAudioResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeAudioResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2?))
+                {
+                    return new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoAddWatermarkResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoAddWatermarkResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoAddWatermarkResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoAddWatermarkResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus2))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetresultResponseStatus2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus2?))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetresultResponseStatus2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus2))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus2?))
+                {
+                    return new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoUploadResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.VideoUploadResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VideoUploadResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.VideoUploadResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2imageResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2imageResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2imageResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2imageResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2imageGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2imageGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2imageGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2imageGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2stickerResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2stickerResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2stickerResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2stickerResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2stickerLaserEngravingResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2stickerLaserEngravingResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2stickerLaserEngravingResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2stickerLaserEngravingResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2stickerGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2stickerGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2stickerGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2stickerGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiGenerateLogoResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiGenerateLogoResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiGenerateLogoResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiGenerateLogoResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiGenerateLogoGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiGenerateLogoGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiGenerateLogoGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiGenerateLogoGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2videoResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2videoResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2videoResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2videoResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiImage2videoResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiImage2videoResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiImage2videoResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiImage2videoResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2videoGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2videoGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2videoGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2videoGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2speechResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2speechResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2speechResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2speechResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2soundResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2soundResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2soundResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2soundResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2audioGetresultResponseStatus))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2audioGetresultResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.GenaiText2audioGetresultResponseStatus?))
+                {
+                    return new global::Picsart.JsonConverters.GenaiText2audioGetresultResponseStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VdDescribeVariableDataContentResponseDataTagType))
+                {
+                    return new global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Picsart.VdDescribeVariableDataContentResponseDataTagType?))
+                {
+                    return new global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
+        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
+        {
+            private readonly object _gate = new();
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+
+            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
+                global::System.Type type,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                for (var index = 0; index < _resolvers.Length; index++)
+                {
+                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
+                    if (typeInfo is not null)
+                    {
+                        return typeInfo;
+                    }
+                }
+
+                return null;
+            }
+
+            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
+            {
+                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
+                if (resolver is not null)
+                {
+                    return resolver;
+                }
+
+                lock (_gate)
+                {
+                    return _resolvers[index] ??= CreateResolver(index);
+                }
+            }
+
+            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
+            {
+                return index switch
+                {
+                    0 => new SourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => new SourceGenerationContextChunk1(new global::System.Text.Json.JsonSerializerOptions()),
+                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
+                };
+            }
         }
     }
 }
