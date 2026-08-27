@@ -9,15 +9,15 @@ namespace Picsart
     public enum GenaiText2stickerGetresultResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

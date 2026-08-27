@@ -14,23 +14,23 @@ namespace Picsart
     public enum ImageMasksPreviewParametersMaskFlip
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Left,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MirrorHorizontal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MirrorVertical,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Right,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Turnaround,
     }

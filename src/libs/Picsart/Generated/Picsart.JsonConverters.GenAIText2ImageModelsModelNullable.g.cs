@@ -20,7 +20,7 @@ namespace Picsart.JsonConverters
                     {
                         return global::Picsart.GenAIText2ImageModelsModelExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

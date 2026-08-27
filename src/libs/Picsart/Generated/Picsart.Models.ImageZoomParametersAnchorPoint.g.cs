@@ -10,43 +10,43 @@ namespace Picsart
     public enum ImageZoomParametersAnchorPoint
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CenterBottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CenterMiddle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CenterTop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeftBottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeftMiddle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeftTop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RightBottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RightMiddle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RightTop,
     }

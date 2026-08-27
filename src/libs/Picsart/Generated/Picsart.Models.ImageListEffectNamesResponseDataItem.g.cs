@@ -4,12 +4,12 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ImageListEffectNamesResponseDataItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }

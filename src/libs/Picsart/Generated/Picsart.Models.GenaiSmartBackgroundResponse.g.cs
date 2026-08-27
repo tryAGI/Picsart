@@ -4,18 +4,18 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GenaiSmartBackgroundResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         public string? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::System.Collections.Generic.IList<global::Picsart.GenaiSmartBackgroundResponseDataItem>? Data { get; set; }

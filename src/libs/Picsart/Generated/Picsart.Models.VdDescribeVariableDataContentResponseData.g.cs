@@ -4,18 +4,18 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VdDescribeVariableDataContentResponseData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
         public global::System.Collections.Generic.IList<global::Picsart.VdDescribeVariableDataContentResponseDataTag>? Tags { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aminated")]
         public bool? Aminated { get; set; }

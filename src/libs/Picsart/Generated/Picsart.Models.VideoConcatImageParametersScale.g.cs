@@ -10,11 +10,11 @@ namespace Picsart
     public enum VideoConcatImageParametersScale
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fill,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fit,
     }

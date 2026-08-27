@@ -10,51 +10,51 @@ namespace Picsart
     public enum VideoExtendedExportParametersExportCodec
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hevc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mpeg4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Av1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cinepak,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ffv1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gif,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         H264,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Theora,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vc2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vp8,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vp9,
     }

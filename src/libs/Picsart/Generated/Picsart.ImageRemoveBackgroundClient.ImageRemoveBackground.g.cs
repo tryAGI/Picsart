@@ -43,7 +43,7 @@ namespace Picsart
 
         /// <summary>
         /// Remove &amp; Change Background<br/>
-        /// Discover the magic of seamless background removal with our removebg service, powered by cutting-edge AI technology. Our sophisticated algorithm effortlessly identifies and isolates the foreground,  ensuring every detail from the delicate intricacies of jewelry to the finest strands of hair is captured with unparalleled precision.  Designed to excel across a vast array of use cases, our service guarantees immaculate cutouts,  whether for professional product photos, dynamic campaign graphics, or personal images meant for creative exploration.  Experience flawless edges and exceptional detail preservation every time, elevating your images beyond the ordinary. 
+        /// Discover the magic of seamless background removal with our removebg service, powered by cutting-edge AI technology. Our sophisticated algorithm effortlessly identifies and isolates the foreground,  ensuring every detail from the delicate intricacies of jewelry to the finest strands of hair is captured with unparalleled precision.  Designed to excel across a vast array of use cases, our service guarantees immaculate cutouts,  whether for professional product photos, dynamic campaign graphics, or personal images meant for creative exploration.  Experience flawless edges and exceptional detail preservation every time, elevating your images beyond the ordinary.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -66,7 +66,7 @@ namespace Picsart
         }
         /// <summary>
         /// Remove &amp; Change Background<br/>
-        /// Discover the magic of seamless background removal with our removebg service, powered by cutting-edge AI technology. Our sophisticated algorithm effortlessly identifies and isolates the foreground,  ensuring every detail from the delicate intricacies of jewelry to the finest strands of hair is captured with unparalleled precision.  Designed to excel across a vast array of use cases, our service guarantees immaculate cutouts,  whether for professional product photos, dynamic campaign graphics, or personal images meant for creative exploration.  Experience flawless edges and exceptional detail preservation every time, elevating your images beyond the ordinary. 
+        /// Discover the magic of seamless background removal with our removebg service, powered by cutting-edge AI technology. Our sophisticated algorithm effortlessly identifies and isolates the foreground,  ensuring every detail from the delicate intricacies of jewelry to the finest strands of hair is captured with unparalleled precision.  Designed to excel across a vast array of use cases, our service guarantees immaculate cutouts,  whether for professional product photos, dynamic campaign graphics, or personal images meant for creative exploration.  Experience flawless edges and exceptional detail preservation every time, elevating your images beyond the ordinary.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -137,7 +137,7 @@ namespace Picsart
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
@@ -913,7 +913,7 @@ namespace Picsart
         }
         /// <summary>
         /// Remove &amp; Change Background<br/>
-        /// Discover the magic of seamless background removal with our removebg service, powered by cutting-edge AI technology. Our sophisticated algorithm effortlessly identifies and isolates the foreground,  ensuring every detail from the delicate intricacies of jewelry to the finest strands of hair is captured with unparalleled precision.  Designed to excel across a vast array of use cases, our service guarantees immaculate cutouts,  whether for professional product photos, dynamic campaign graphics, or personal images meant for creative exploration.  Experience flawless edges and exceptional detail preservation every time, elevating your images beyond the ordinary. 
+        /// Discover the magic of seamless background removal with our removebg service, powered by cutting-edge AI technology. Our sophisticated algorithm effortlessly identifies and isolates the foreground,  ensuring every detail from the delicate intricacies of jewelry to the finest strands of hair is captured with unparalleled precision.  Designed to excel across a vast array of use cases, our service guarantees immaculate cutouts,  whether for professional product photos, dynamic campaign graphics, or personal images meant for creative exploration.  Experience flawless edges and exceptional detail preservation every time, elevating your images beyond the ordinary.
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

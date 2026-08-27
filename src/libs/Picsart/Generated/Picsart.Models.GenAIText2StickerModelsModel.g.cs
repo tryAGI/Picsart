@@ -12,107 +12,107 @@ namespace Picsart
     public enum GenAIText2StickerModelsModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_fluxai_model_fluxai_flux2Flex_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_fluxai_model_fluxai_flux2Max_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_fluxai_model_fluxai_flux2Pro_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_google_model_google_gemini25FlashImage_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_google_model_google_gemini3ProImagePreview_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_google_model_google_imagen40FastGenerate001_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_google_model_google_imagen40Generate001_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_google_model_google_imagen40UltraGenerate001_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_hunyuan_model_hunyuan_hunyuanImage_3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_ideogram_model_ideogram_ideogram2aTurbo_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_ideogram_model_ideogram_ideogram2a_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_ideogram_model_ideogram_ideogramTurbo_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_ideogram_model_ideogram_ideogramTurbo_2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_ideogram_model_ideogram_ideogram_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_ideogram_model_ideogram_ideogram_2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_ideogram_model_ideogram_ideogram_3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_openai_model_openai_dallE3_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_openai_model_openai_gptImage15_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_openai_model_openai_gptImage1_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_qwen_model_qwen_qwenImage25_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_reve_model_reve_reve_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_runway_model_runway_gen4ImageRef_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_sdxl_model_fluxai_fluxKontextMax_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_sdxl_model_fluxai_fluxKontextPro_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_seedream_model_seedream_seedream_40,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_seedream_model_seedream_seedream_45,
     }

@@ -13,15 +13,15 @@ namespace Picsart
     public enum ImageEffectsPreviewsParametersFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jpg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Png,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webp,
     }

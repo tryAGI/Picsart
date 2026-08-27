@@ -14,19 +14,19 @@ namespace Picsart
     public enum GenAILaserEngravingParametersFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jpg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Png,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Svg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webp,
     }

@@ -15,23 +15,23 @@ namespace Picsart
     public enum VDExportVariableDataContentParametersFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jpg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pdf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Png,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Replay,
     }

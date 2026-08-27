@@ -4,12 +4,12 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VdExportVariableDataContentGetresultResponseDataItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("urls")]
         public global::System.Collections.Generic.IList<string>? Urls { get; set; }

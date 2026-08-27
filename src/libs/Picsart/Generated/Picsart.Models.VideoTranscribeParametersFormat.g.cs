@@ -14,19 +14,19 @@ namespace Picsart
     public enum VideoTranscribeParametersFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sbv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Srt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Txt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vtt,
     }

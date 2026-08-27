@@ -12,7 +12,7 @@ namespace Picsart
     public enum ImageRemoveBackgroundParametersJSONModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_picsart_model_picsart_sod_10,
     }

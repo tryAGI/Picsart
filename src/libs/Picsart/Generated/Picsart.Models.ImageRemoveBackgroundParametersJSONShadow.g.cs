@@ -10,43 +10,43 @@ namespace Picsart
     public enum ImageRemoveBackgroundParametersJSONShadow
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BottomLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BottomRight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Left,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Right,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Top,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopRight,
     }

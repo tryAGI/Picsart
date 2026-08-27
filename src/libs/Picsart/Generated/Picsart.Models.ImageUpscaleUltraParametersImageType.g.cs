@@ -13,19 +13,19 @@ namespace Picsart
     public enum ImageUpscaleUltraParametersImageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Graphics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nature,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Portrait,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Product,
     }

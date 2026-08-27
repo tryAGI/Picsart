@@ -4,18 +4,18 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoEditParameters
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fit")]
         public global::Picsart.VideoFitParameters? Fit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("crop")]
         public global::Picsart.VideoCropParameters? Crop { get; set; }

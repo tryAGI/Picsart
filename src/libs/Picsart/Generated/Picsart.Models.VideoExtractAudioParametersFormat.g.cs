@@ -14,19 +14,19 @@ namespace Picsart
     public enum VideoExtractAudioParametersFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         M4a,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wav,
     }

@@ -12,11 +12,11 @@ namespace Picsart
     public enum GenAIText2SoundModelsModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_elevenlabs_model_elevenlabs_elevenlabsSoundEffectsV2_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_kling_model_kling_klingTextToAudio_1,
     }

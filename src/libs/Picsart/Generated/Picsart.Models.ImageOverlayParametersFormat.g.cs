@@ -13,15 +13,15 @@ namespace Picsart
     public enum ImageOverlayParametersFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jpg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Png,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webp,
     }

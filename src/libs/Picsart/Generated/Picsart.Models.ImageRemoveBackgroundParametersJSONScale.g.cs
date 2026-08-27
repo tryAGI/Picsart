@@ -10,11 +10,11 @@ namespace Picsart
     public enum ImageRemoveBackgroundParametersJSONScale
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fill,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fit,
     }

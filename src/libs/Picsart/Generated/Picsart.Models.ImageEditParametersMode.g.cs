@@ -9,11 +9,11 @@ namespace Picsart
     public enum ImageEditParametersMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Crop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resize,
     }

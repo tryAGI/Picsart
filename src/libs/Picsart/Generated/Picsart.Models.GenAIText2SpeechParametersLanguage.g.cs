@@ -10,11 +10,11 @@ namespace Picsart
     public enum GenAIText2SpeechParametersLanguage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         En,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fr,
     }

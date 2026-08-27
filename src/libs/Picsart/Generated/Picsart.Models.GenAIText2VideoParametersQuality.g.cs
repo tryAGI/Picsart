@@ -10,15 +10,15 @@ namespace Picsart
     public enum GenAIText2VideoParametersQuality
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1080p,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x480p,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x720p,
     }

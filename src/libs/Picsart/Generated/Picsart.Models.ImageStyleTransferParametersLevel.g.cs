@@ -15,23 +15,23 @@ namespace Picsart
     public enum ImageStyleTransferParametersLevel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         L1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         L2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         L3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         L4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         L5,
     }

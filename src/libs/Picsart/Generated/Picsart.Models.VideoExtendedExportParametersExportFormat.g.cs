@@ -14,19 +14,19 @@ namespace Picsart
     public enum VideoExtendedExportParametersExportFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gif,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mov,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webm,
     }

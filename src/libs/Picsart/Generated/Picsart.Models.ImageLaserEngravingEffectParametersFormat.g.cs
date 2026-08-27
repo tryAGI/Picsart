@@ -14,19 +14,19 @@ namespace Picsart
     public enum ImageLaserEngravingEffectParametersFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jpg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Png,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Svg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webp,
     }

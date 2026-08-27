@@ -13,15 +13,15 @@ namespace Picsart
     public enum ImageUpscaleUltraParametersMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Async,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sync,
     }

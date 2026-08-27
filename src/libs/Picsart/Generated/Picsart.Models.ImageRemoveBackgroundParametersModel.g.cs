@@ -12,11 +12,11 @@ namespace Picsart
     public enum ImageRemoveBackgroundParametersModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_picsart_model_picsart_sod_10,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_picsart_model_picsart_sod_101,
     }

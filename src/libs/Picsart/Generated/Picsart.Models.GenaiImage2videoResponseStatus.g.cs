@@ -9,15 +9,15 @@ namespace Picsart
     public enum GenaiImage2videoResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

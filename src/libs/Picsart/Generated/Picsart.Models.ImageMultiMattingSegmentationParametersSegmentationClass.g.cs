@@ -19,43 +19,43 @@ namespace Picsart
     public enum ImageMultiMattingSegmentationParametersSegmentationClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Background,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clothes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eyes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Foreground,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glasses,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hair,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lips,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Skin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sky,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Teeth,
     }

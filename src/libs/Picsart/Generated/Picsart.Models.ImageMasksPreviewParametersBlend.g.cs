@@ -17,31 +17,31 @@ namespace Picsart
     public enum ImageMasksPreviewParametersBlend
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Add,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Darken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lighten,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Multiply,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Normal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Overlay,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Screen,
     }

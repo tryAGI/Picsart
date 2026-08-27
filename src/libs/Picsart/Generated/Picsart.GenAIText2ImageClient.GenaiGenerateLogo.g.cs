@@ -43,7 +43,7 @@ namespace Picsart
 
         /// <summary>
         /// Logo Generator<br/>
-        /// Generate logos using company info, general description. You can add additional information to guide on the details you want to get on the logo. It is also possible to provide an example logo to generate similar logos. 
+        /// Generate logos using company info, general description. You can add additional information to guide on the details you want to get on the logo. It is also possible to provide an example logo to generate similar logos.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -66,7 +66,7 @@ namespace Picsart
         }
         /// <summary>
         /// Logo Generator<br/>
-        /// Generate logos using company info, general description. You can add additional information to guide on the details you want to get on the logo. It is also possible to provide an example logo to generate similar logos. 
+        /// Generate logos using company info, general description. You can add additional information to guide on the details you want to get on the logo. It is also possible to provide an example logo to generate similar logos.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -137,7 +137,7 @@ namespace Picsart
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
 
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
@@ -876,7 +876,7 @@ namespace Picsart
         }
         /// <summary>
         /// Logo Generator<br/>
-        /// Generate logos using company info, general description. You can add additional information to guide on the details you want to get on the logo. It is also possible to provide an example logo to generate similar logos. 
+        /// Generate logos using company info, general description. You can add additional information to guide on the details you want to get on the logo. It is also possible to provide an example logo to generate similar logos.
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

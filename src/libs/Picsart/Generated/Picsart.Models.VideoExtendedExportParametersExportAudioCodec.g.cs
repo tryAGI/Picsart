@@ -10,43 +10,43 @@ namespace Picsart
     public enum VideoExtendedExportParametersExportAudioCodec
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pcm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ac3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mp3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OggSpeex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OggVorbis,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Opus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wav,
     }

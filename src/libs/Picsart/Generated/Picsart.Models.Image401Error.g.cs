@@ -4,7 +4,7 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Image401Error
     {
@@ -23,7 +23,7 @@ namespace Picsart
         public string? Message { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detail")]
         [global::System.Text.Json.Serialization.JsonRequired]

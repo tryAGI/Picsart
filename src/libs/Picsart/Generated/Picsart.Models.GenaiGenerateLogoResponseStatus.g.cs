@@ -9,15 +9,15 @@ namespace Picsart
     public enum GenaiGenerateLogoResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

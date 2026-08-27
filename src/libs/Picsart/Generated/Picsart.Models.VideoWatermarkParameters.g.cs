@@ -4,7 +4,7 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoWatermarkParameters
     {
@@ -34,13 +34,13 @@ namespace Picsart
         public global::Picsart.VideoWatermarkParametersAnchorPoint? AnchorPoint { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("watermark_width")]
         public int? WatermarkWidth { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("watermark_height")]
         public int? WatermarkHeight { get; set; }

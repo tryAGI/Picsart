@@ -20,47 +20,47 @@ namespace Picsart
     public enum ImageMasksParametersMask
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lace1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lace2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lace3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lace4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prsm10,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prsm3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prsm9,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rpl3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rpl5,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shdw17,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shdw2,
     }

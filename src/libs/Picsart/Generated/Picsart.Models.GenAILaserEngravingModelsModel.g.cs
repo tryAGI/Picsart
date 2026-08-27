@@ -12,11 +12,11 @@ namespace Picsart
     public enum GenAILaserEngravingModelsModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_sdxl_model_fluxai_fluxKontextMax_1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urn_air_sdxl_model_fluxai_fluxKontextPro_1,
     }

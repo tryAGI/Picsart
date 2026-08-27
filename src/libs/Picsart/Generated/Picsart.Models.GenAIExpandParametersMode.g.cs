@@ -13,15 +13,15 @@ namespace Picsart
     public enum GenAIExpandParametersMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Async,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sync,
     }
