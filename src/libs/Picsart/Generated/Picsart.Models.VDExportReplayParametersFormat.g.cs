@@ -11,7 +11,7 @@ namespace Picsart
     public enum VDExportReplayParametersFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pdf,
     }

@@ -6,7 +6,7 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GenAIBleedParameters
     {

@@ -10,55 +10,55 @@ namespace Picsart
     public enum ImageOverlayParametersBlendMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Color,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ColorDodge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Darken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HardLight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lighten,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Luminosity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Multiply,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Normal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Overlay,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Saturation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Screen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SoftLight,
     }

@@ -20,43 +20,43 @@ namespace Picsart
     public enum GenAILogoParametersColorTone
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gray,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Green,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Orange,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pink,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Purple,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Red,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Yellow,
     }

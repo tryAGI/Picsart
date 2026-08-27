@@ -4,19 +4,19 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VdDescribeVariableDataContentResponseDataTag
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Picsart.JsonConverters.VdDescribeVariableDataContentResponseDataTagTypeJsonConverter))]
         public global::Picsart.VdDescribeVariableDataContentResponseDataTagType? Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tag")]
         public string? Tag { get; set; }

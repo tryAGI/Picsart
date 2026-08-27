@@ -10,23 +10,23 @@ namespace Picsart
     public enum ImageTextureParametersPattern
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Diamond,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hex2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mirror,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tile,
     }

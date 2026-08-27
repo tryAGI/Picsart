@@ -4,7 +4,7 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GenAIText2TextCompletionsParametersMessage
     {
@@ -16,7 +16,7 @@ namespace Picsart
         public string? Role { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         public string? Content { get; set; }

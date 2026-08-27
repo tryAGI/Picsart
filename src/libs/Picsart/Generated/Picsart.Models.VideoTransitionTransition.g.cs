@@ -9,55 +9,55 @@ namespace Picsart
     public enum VideoTransitionTransition
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fade,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlyInFromBottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlyInFromLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlyInFromRight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlyInFromTop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlyOutToBottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlyOutToLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlyOutToRight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlyOutToTop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZoomIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZoomOut,
     }

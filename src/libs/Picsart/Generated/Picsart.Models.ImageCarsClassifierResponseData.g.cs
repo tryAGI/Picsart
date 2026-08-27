@@ -4,25 +4,25 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ImageCarsClassifierResponseData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("class")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Picsart.JsonConverters.ImageCarsClassifierResponseDataClassJsonConverter))]
         public global::Picsart.ImageCarsClassifierResponseDataClass? Class { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vin")]
         public string? Vin { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("odo")]
         public string? Odo { get; set; }

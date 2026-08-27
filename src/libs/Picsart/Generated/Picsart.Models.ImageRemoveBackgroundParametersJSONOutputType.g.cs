@@ -10,11 +10,11 @@ namespace Picsart
     public enum ImageRemoveBackgroundParametersJSONOutputType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cutout,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mask,
     }

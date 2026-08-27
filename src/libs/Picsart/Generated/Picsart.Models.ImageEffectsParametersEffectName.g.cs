@@ -81,291 +81,291 @@ namespace Picsart
     public enum ImageEffectsParametersEffectName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1972,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apr1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apr2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apr3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brl1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brnz1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brnz2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brnz3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brnz4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cyber1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cyber2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dodger,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fattal2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Food1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Food2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gblur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icy1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icy2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icy3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lensblur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light10,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light11,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light12,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light13,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light14,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light15,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light16,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light17,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light18,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light19,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light20,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light5,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light6,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light7,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light8,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Light9,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mnch1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mnch2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mnch3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Motionblur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nature1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nature2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Noise,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ntrl1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ntrl2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pixelize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Popart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Saturation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sft1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sft2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sft3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sft4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shadow1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shadow2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sketch1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sketch2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sketch3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sketcher1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sketcher2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Smartblur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spc1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tl1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tl2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urban1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Urban2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Water1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Water2,
     }

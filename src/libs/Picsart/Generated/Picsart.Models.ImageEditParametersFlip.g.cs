@@ -9,11 +9,11 @@ namespace Picsart
     public enum ImageEditParametersFlip
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Horizontal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vertical,
     }

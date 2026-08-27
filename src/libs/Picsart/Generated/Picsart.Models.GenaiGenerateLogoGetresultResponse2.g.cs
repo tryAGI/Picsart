@@ -4,7 +4,7 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GenaiGenerateLogoGetresultResponse2
     {
@@ -16,7 +16,7 @@ namespace Picsart
         public global::Picsart.GenaiGenerateLogoGetresultResponseStatus? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inference_id")]
         public string? InferenceId { get; set; }

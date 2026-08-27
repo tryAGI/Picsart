@@ -67,231 +67,231 @@ namespace Picsart
     public enum VideoTranscribeParametersLanguage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Af,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Am,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Az,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Be,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ca,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Da,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         De,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         El,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         En,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Es,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Et,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         He,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Id,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Is,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         It,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ja,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ko,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ms,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ne,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ru,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ta,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Th,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zh,
     }

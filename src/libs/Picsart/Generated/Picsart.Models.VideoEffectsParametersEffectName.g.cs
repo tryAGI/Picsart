@@ -57,195 +57,195 @@ namespace Picsart
     public enum VideoEffectsParametersEffectName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlackAndWhite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dtn1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dtn2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dtn3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dtn4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dtn5,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FocalZoom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LensBlur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MotionBlur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RadialBlur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SmartBlur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apr1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apr2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apr3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brnz1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brnz2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brnz3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brnz4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cyber1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cyber2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cyber3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icy1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icy2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icy3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icy4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mnch1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mnch2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mnch3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Noise,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ntrl1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ntrl2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ntrl3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pixelize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Saturation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sft1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sft2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sft3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sft4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sharpen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stenciler1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stenciler3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stenciler4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stenciler6,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stenciler7,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tl1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tl2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vignette,
     }

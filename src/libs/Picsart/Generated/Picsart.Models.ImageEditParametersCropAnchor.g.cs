@@ -15,23 +15,23 @@ namespace Picsart
     public enum ImageEditParametersCropAnchor
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BottomLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BottomRight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Center,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopRight,
     }

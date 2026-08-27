@@ -4,56 +4,56 @@
 namespace Picsart
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ImageCarsClassifierResponseDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x34FrontLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x34FrontRight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x34RearLeft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x34RearRight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Detail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Engine,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Front,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Interior,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeftSide,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rear,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RightSide,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Top,
     }

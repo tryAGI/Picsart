@@ -52,175 +52,175 @@ namespace Picsart
     public enum ImageAIEffectsParametersEffectName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x744,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x815,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Animation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Badlands,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cartoon1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cartoon2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Colorbright,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Crushedmarble,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dystopia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Feast,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flare,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flora,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Galaxy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Geode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Haze,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Highlight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hintofyellow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Holidayparty,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Letitsnow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Libtest2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Midnight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Money,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Moonlight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neopop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nightcore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pastel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pleinair34120,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Popsketch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prettyinpink,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rainbow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rosegold,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rosequartz,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ShadesOfGray,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shamrock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sketchy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Soul,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Staygold,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Undead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Whiteice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Winterblues,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wispy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wonderland,
     }

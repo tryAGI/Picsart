@@ -9,43 +9,43 @@ namespace Picsart
     public enum ImageWatermarkParametersAnchorPoint
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CenterBottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CenterMiddle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CenterTop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeftBottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeftMiddle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeftTop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pattern,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RightBottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RightMiddle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RightTop,
     }

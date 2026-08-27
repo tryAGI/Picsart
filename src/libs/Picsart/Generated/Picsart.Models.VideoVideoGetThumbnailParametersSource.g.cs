@@ -9,15 +9,15 @@ namespace Picsart
     public enum VideoVideoGetThumbnailParametersSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Container,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Timestamp,
     }

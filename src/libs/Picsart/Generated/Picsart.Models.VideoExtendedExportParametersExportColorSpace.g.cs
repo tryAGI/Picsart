@@ -10,11 +10,11 @@ namespace Picsart
     public enum VideoExtendedExportParametersExportColorSpace
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisplayP3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Srgb,
     }

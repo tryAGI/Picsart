@@ -13,11 +13,11 @@ namespace Picsart
     public enum GenAIInpaintingParametersMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Async,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sync,
     }

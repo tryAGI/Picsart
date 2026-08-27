@@ -40,7 +40,7 @@ namespace Picsart
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Picsart.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -50,7 +50,7 @@ namespace Picsart
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GenAIInpaintingImage2ImageClient GenAIInpaintingImage2Image => new GenAIInpaintingImage2ImageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -59,7 +59,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GenAIText2AudioClient GenAIText2Audio => new GenAIText2AudioClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -68,7 +68,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GenAIText2ImageClient GenAIText2Image => new GenAIText2ImageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -77,7 +77,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GenAIText2TextClient GenAIText2Text => new GenAIText2TextClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -86,7 +86,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GenAIText2VideoImage2VideoClient GenAIText2VideoImage2Video => new GenAIText2VideoImage2VideoClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -95,7 +95,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GenAIUtilitiesClient GenAIUtilities => new GenAIUtilitiesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -104,7 +104,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageClassificationClient ImageClassification => new ImageClassificationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -113,7 +113,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageContentGenerationClient ImageContentGeneration => new ImageContentGenerationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -122,7 +122,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageConversionClient ImageConversion => new ImageConversionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -131,7 +131,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageEditingClient ImageEditing => new ImageEditingClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -140,7 +140,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageEffectsClient ImageEffects => new ImageEffectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -149,7 +149,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImagePhotoEnhancementClient ImagePhotoEnhancement => new ImagePhotoEnhancementClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -158,7 +158,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageRemoveBackgroundClient ImageRemoveBackground => new ImageRemoveBackgroundClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -167,7 +167,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageSurfacemapClient ImageSurfacemap => new ImageSurfacemapClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -176,7 +176,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageUtilitiesClient ImageUtilities => new ImageUtilitiesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -185,7 +185,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageWatermarkClient ImageWatermark => new ImageWatermarkClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -194,7 +194,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VdReplayClient VdReplay => new VdReplayClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -203,7 +203,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VdUtilitiesClient VdUtilities => new VdUtilitiesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -212,7 +212,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VdVariableDataContentClient VdVariableDataContent => new VdVariableDataContentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -221,7 +221,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoAdsClient VideoAds => new VideoAdsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -230,7 +230,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoAudioClient VideoAudio => new VideoAudioClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -239,7 +239,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoEditClient VideoEdit => new VideoEditClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -248,7 +248,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoEffectsClient VideoEffects => new VideoEffectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -257,7 +257,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoMetadataClient VideoMetadata => new VideoMetadataClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -266,7 +266,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoRemoveBackgroundClient VideoRemoveBackground => new VideoRemoveBackgroundClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -275,7 +275,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoTranscriptionsClient VideoTranscriptions => new VideoTranscriptionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -284,7 +284,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoUtilitiesClient VideoUtilities => new VideoUtilitiesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -293,7 +293,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoVideoEnhancementClient VideoVideoEnhancement => new VideoVideoEnhancementClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -302,7 +302,7 @@ namespace Picsart
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideoWatermarkClient VideoWatermark => new VideoWatermarkClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

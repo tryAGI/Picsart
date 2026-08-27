@@ -10,15 +10,15 @@ namespace Picsart
     public enum VideoExtendedExportParametersExportQuality
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         High,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Low,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Medium,
     }

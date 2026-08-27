@@ -10,15 +10,15 @@ namespace Picsart
     public enum VideoTranscribeParametersGranularity
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1Word,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2Words,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sentence,
     }
