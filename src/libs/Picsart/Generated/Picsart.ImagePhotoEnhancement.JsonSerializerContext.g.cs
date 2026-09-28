@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace Picsart
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
@@ -25,7 +20,9 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleParametersFormat), TypeInfoPropertyName = "ImageUpscaleParametersFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParameters))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParametersProductType), TypeInfoPropertyName = "ImageUpscaleUltraParametersProductType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParametersImageType), TypeInfoPropertyName = "ImageUpscaleUltraParametersImageType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParametersMode), TypeInfoPropertyName = "ImageUpscaleUltraParametersMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParametersFormat), TypeInfoPropertyName = "ImageUpscaleUltraParametersFormat2")]
@@ -53,7 +50,9 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageFaceEnhanceResponseData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleParametersFormat?), TypeInfoPropertyName = "NullableImageUpscaleParametersFormat2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParametersProductType?), TypeInfoPropertyName = "NullableImageUpscaleUltraParametersProductType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParametersImageType?), TypeInfoPropertyName = "NullableImageUpscaleUltraParametersImageType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParametersMode?), TypeInfoPropertyName = "NullableImageUpscaleUltraParametersMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUpscaleUltraParametersFormat?), TypeInfoPropertyName = "NullableImageUpscaleUltraParametersFormat2")]
