@@ -34,14 +34,14 @@ namespace Picsart
         /// <inheritdoc/>
         public global::Picsart.AutoSDKClientOptions Options { get; }
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Picsart.GenAIText2AudioSourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext>? JsonSerializerContextProvider { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
-            get => JsonSerializerContextProvider.Value;
+            get => JsonSerializerContextProvider?.Value ?? global::Picsart.GenAIText2AudioSourceGenerationContext.Default;
             set => JsonSerializerContextProvider = new(() => value);
         }
 
