@@ -12,6 +12,7 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageUploadParameters))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(byte[]))]
@@ -510,7 +511,6 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageAdjustParametersFormat?), TypeInfoPropertyName = "NullableImageAdjustParametersFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageSelectiveBlurParametersFormat?), TypeInfoPropertyName = "NullableImageSelectiveBlurParametersFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageSmartCropParametersRatio?), TypeInfoPropertyName = "NullableImageSmartCropParametersRatio2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageSmartCropParametersFormat?), TypeInfoPropertyName = "NullableImageSmartCropParametersFormat2")]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -521,6 +521,7 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageSmartCropParametersFormat?), TypeInfoPropertyName = "NullableImageSmartCropParametersFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageZoomParametersAnchorPoint?), TypeInfoPropertyName = "NullableImageZoomParametersAnchorPoint2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageZoomParametersFormat?), TypeInfoPropertyName = "NullableImageZoomParametersFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.ImageColorTransferParametersFormat?), TypeInfoPropertyName = "NullableImageColorTransferParametersFormat2")]
