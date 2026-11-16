@@ -1394,575 +1394,555 @@ namespace Picsart
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoUpscaleFpsGetresultResponseStatus2? Type339 { get; set; }
+        public global::Picsart.VideoRemoveBackgroundResponse? Type339 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoRemoveBackgroundResponse? Type340 { get; set; }
+        public global::Picsart.VideoRemoveBackgroundResponseStatus? Type340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoRemoveBackgroundResponseStatus? Type341 { get; set; }
+        public global::Picsart.VideoAdjustResponse? Type341 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoAdjustResponse? Type342 { get; set; }
+        public global::Picsart.VideoAdjustResponseStatus? Type342 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoAdjustResponseStatus? Type343 { get; set; }
+        public global::Picsart.VideoApplyEffectResponse? Type343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoApplyEffectResponse? Type344 { get; set; }
+        public global::Picsart.VideoApplyEffectResponseStatus? Type344 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoApplyEffectResponseStatus? Type345 { get; set; }
+        public global::Picsart.VideoEditResponse? Type345 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoEditResponse? Type346 { get; set; }
+        public global::Picsart.VideoEditResponseStatus? Type346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoEditResponseStatus? Type347 { get; set; }
+        public global::Picsart.VideoTrimResponse? Type347 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTrimResponse? Type348 { get; set; }
+        public global::Picsart.VideoTrimResponseStatus? Type348 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTrimResponseStatus? Type349 { get; set; }
+        public global::Picsart.VideoCropResponse? Type349 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoCropResponse? Type350 { get; set; }
+        public global::Picsart.VideoCropResponseStatus? Type350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoCropResponseStatus? Type351 { get; set; }
+        public global::Picsart.VideoConcatResponse? Type351 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoConcatResponse? Type352 { get; set; }
+        public global::Picsart.VideoConcatResponseStatus? Type352 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoConcatResponseStatus? Type353 { get; set; }
+        public global::Picsart.VideoConcatHighlightsResponse? Type353 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoConcatHighlightsResponse? Type354 { get; set; }
+        public global::Picsart.VideoConcatHighlightsResponseStatus? Type354 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoConcatHighlightsResponseStatus? Type355 { get; set; }
+        public global::Picsart.VideoFitResponse? Type355 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoFitResponse? Type356 { get; set; }
+        public global::Picsart.VideoFitResponseStatus? Type356 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoFitResponseStatus? Type357 { get; set; }
+        public global::Picsart.VideoMetadataResponse? Type357 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoMetadataResponse? Type358 { get; set; }
+        public global::Picsart.VideoMetadataResponseData? Type358 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoMetadataResponseData? Type359 { get; set; }
+        public global::Picsart.VideoMetadataResponseStatus? Type359 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoMetadataResponseStatus? Type360 { get; set; }
+        public global::Picsart.VideoGetThumbnailResponse? Type360 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetThumbnailResponse? Type361 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.VideoGetThumbnailResponseDataItem>? Type361 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.VideoGetThumbnailResponseDataItem>? Type362 { get; set; }
+        public global::Picsart.VideoGetThumbnailResponseDataItem? Type362 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetThumbnailResponseDataItem? Type363 { get; set; }
+        public global::Picsart.VideoGetThumbnailResponseStatus? Type363 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetThumbnailResponseStatus? Type364 { get; set; }
+        public global::Picsart.VideoSetThumbnailResponse? Type364 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoSetThumbnailResponse? Type365 { get; set; }
+        public global::Picsart.VideoSetThumbnailResponseStatus? Type365 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoSetThumbnailResponseStatus? Type366 { get; set; }
+        public global::Picsart.VideoSetThumbnailGetresultResponse? Type366 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoSetThumbnailGetresultResponse? Type367 { get; set; }
+        public global::Picsart.VideoSetThumbnailGetresultResponseData? Type367 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoSetThumbnailGetresultResponseData? Type368 { get; set; }
+        public global::Picsart.VideoSetThumbnailGetresultResponseStatus? Type368 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoSetThumbnailGetresultResponseStatus? Type369 { get; set; }
+        public global::Picsart.VideoSetThumbnailGetresultResponse2? Type369 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoSetThumbnailGetresultResponse2? Type370 { get; set; }
+        public global::Picsart.VideoEncodeCtvResponse? Type370 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoSetThumbnailGetresultResponseStatus2? Type371 { get; set; }
+        public global::Picsart.VideoEncodeCtvResponseStatus? Type371 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoEncodeCtvResponse? Type372 { get; set; }
+        public global::Picsart.VideoAdjustAudioResponse? Type372 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoEncodeCtvResponseStatus? Type373 { get; set; }
+        public global::Picsart.VideoAdjustAudioResponseStatus? Type373 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoAdjustAudioResponse? Type374 { get; set; }
+        public global::Picsart.VideoExtractAudioResponse? Type374 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoAdjustAudioResponseStatus? Type375 { get; set; }
+        public global::Picsart.VideoExtractAudioResponseStatus? Type375 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoExtractAudioResponse? Type376 { get; set; }
+        public global::Picsart.VideoTranscribeAudioResponse? Type376 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoExtractAudioResponseStatus? Type377 { get; set; }
+        public global::Picsart.VideoTranscribeAudioResponseStatus? Type377 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTranscribeAudioResponse? Type378 { get; set; }
+        public global::Picsart.VideoTranscribeAudioGetresultResponse? Type378 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTranscribeAudioResponseStatus? Type379 { get; set; }
+        public global::Picsart.VideoTranscribeAudioGetresultResponseData? Type379 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTranscribeAudioGetresultResponse? Type380 { get; set; }
+        public global::Picsart.VideoTranscribeAudioGetresultResponseStatus? Type380 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTranscribeAudioGetresultResponseData? Type381 { get; set; }
+        public global::Picsart.VideoTranscribeAudioGetresultResponse2? Type381 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTranscribeAudioGetresultResponseStatus? Type382 { get; set; }
+        public global::Picsart.VideoAddWatermarkResponse? Type382 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTranscribeAudioGetresultResponse2? Type383 { get; set; }
+        public global::Picsart.VideoAddWatermarkResponseStatus? Type383 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoTranscribeAudioGetresultResponseStatus2? Type384 { get; set; }
+        public global::Picsart.VideoGetresultResponse? Type384 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoAddWatermarkResponse? Type385 { get; set; }
+        public global::Picsart.VideoGetresultResponseData? Type385 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoAddWatermarkResponseStatus? Type386 { get; set; }
+        public global::Picsart.VideoGetresultResponseStatus? Type386 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetresultResponse? Type387 { get; set; }
+        public global::Picsart.VideoGetresultResponse2? Type387 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetresultResponseData? Type388 { get; set; }
+        public global::Picsart.VideoGetaudioresultResponse? Type388 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetresultResponseStatus? Type389 { get; set; }
+        public global::Picsart.VideoGetaudioresultResponseData? Type389 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetresultResponse2? Type390 { get; set; }
+        public global::Picsart.VideoGetaudioresultResponseStatus? Type390 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetresultResponseStatus2? Type391 { get; set; }
+        public global::Picsart.VideoGetaudioresultResponse2? Type391 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetaudioresultResponse? Type392 { get; set; }
+        public global::Picsart.VideoUploadResponse? Type392 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetaudioresultResponseData? Type393 { get; set; }
+        public global::Picsart.VideoUploadResponseData? Type393 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetaudioresultResponseStatus? Type394 { get; set; }
+        public global::Picsart.VideoUploadResponseStatus? Type394 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetaudioresultResponse2? Type395 { get; set; }
+        public global::Picsart.VideoCreditsBalanceResponse? Type395 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoGetaudioresultResponseStatus2? Type396 { get; set; }
+        public global::Picsart.GenaiText2textCompletionsResponse? Type396 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoUploadResponse? Type397 { get; set; }
+        public global::Picsart.GenaiText2imageResponse? Type397 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoUploadResponseData? Type398 { get; set; }
+        public global::Picsart.GenaiText2imageResponseStatus? Type398 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoUploadResponseStatus? Type399 { get; set; }
+        public global::Picsart.GenaiText2imageGetresultResponse? Type399 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VideoCreditsBalanceResponse? Type400 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.GenaiText2imageGetresultResponseDataItem>? Type400 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2textCompletionsResponse? Type401 { get; set; }
+        public global::Picsart.GenaiText2imageGetresultResponseDataItem? Type401 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2imageResponse? Type402 { get; set; }
+        public global::Picsart.GenaiText2imageGetresultResponse2? Type402 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2imageResponseStatus? Type403 { get; set; }
+        public global::Picsart.GenaiText2imageGetresultResponseStatus? Type403 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2imageGetresultResponse? Type404 { get; set; }
+        public global::Picsart.GenaiText2stickerResponse? Type404 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.GenaiText2imageGetresultResponseDataItem>? Type405 { get; set; }
+        public global::Picsart.GenaiText2stickerResponseStatus? Type405 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2imageGetresultResponseDataItem? Type406 { get; set; }
+        public global::Picsart.GenaiText2stickerLaserEngravingResponse? Type406 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2imageGetresultResponse2? Type407 { get; set; }
+        public global::Picsart.GenaiText2stickerLaserEngravingResponseStatus? Type407 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2imageGetresultResponseStatus? Type408 { get; set; }
+        public global::Picsart.GenaiText2stickerGetresultResponse? Type408 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2stickerResponse? Type409 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.GenaiText2stickerGetresultResponseDataItem>? Type409 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2stickerResponseStatus? Type410 { get; set; }
+        public global::Picsart.GenaiText2stickerGetresultResponseDataItem? Type410 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2stickerLaserEngravingResponse? Type411 { get; set; }
+        public global::Picsart.GenaiText2stickerGetresultResponse2? Type411 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2stickerLaserEngravingResponseStatus? Type412 { get; set; }
+        public global::Picsart.GenaiText2stickerGetresultResponseStatus? Type412 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2stickerGetresultResponse? Type413 { get; set; }
+        public global::Picsart.GenaiGenerateLogoResponse? Type413 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.GenaiText2stickerGetresultResponseDataItem>? Type414 { get; set; }
+        public global::Picsart.GenaiGenerateLogoResponseStatus? Type414 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2stickerGetresultResponseDataItem? Type415 { get; set; }
+        public global::Picsart.GenaiGenerateLogoGetresultResponse? Type415 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2stickerGetresultResponse2? Type416 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.GenaiGenerateLogoGetresultResponseDataItem>? Type416 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2stickerGetresultResponseStatus? Type417 { get; set; }
+        public global::Picsart.GenaiGenerateLogoGetresultResponseDataItem? Type417 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiGenerateLogoResponse? Type418 { get; set; }
+        public global::Picsart.GenaiGenerateLogoGetresultResponse2? Type418 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiGenerateLogoResponseStatus? Type419 { get; set; }
+        public global::Picsart.GenaiGenerateLogoGetresultResponseStatus? Type419 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiGenerateLogoGetresultResponse? Type420 { get; set; }
+        public global::Picsart.GenaiImageInpaintingResponse? Type420 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.GenaiGenerateLogoGetresultResponseDataItem>? Type421 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.GenaiImageInpaintingResponseDataItem>? Type421 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiGenerateLogoGetresultResponseDataItem? Type422 { get; set; }
+        public global::Picsart.GenaiImageInpaintingResponseDataItem? Type422 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiGenerateLogoGetresultResponse2? Type423 { get; set; }
+        public global::Picsart.GenaiImageInpaintingResponse2? Type423 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiGenerateLogoGetresultResponseStatus? Type424 { get; set; }
+        public global::Picsart.GenaiImageOutpaintingResponse? Type424 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageInpaintingResponse? Type425 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.GenaiImageOutpaintingResponseDataItem>? Type425 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.GenaiImageInpaintingResponseDataItem>? Type426 { get; set; }
+        public global::Picsart.GenaiImageOutpaintingResponseDataItem? Type426 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageInpaintingResponseDataItem? Type427 { get; set; }
+        public global::Picsart.GenaiImageOutpaintingResponse2? Type427 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageInpaintingResponse2? Type428 { get; set; }
+        public global::Picsart.GenaiRemoveObjectResponse? Type428 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageOutpaintingResponse? Type429 { get; set; }
+        public global::Picsart.GenaiRemoveObjectResponseData? Type429 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.GenaiImageOutpaintingResponseDataItem>? Type430 { get; set; }
+        public global::Picsart.GenaiRemoveObjectResponse2? Type430 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageOutpaintingResponseDataItem? Type431 { get; set; }
+        public global::Picsart.GenaiSmartBackgroundResponse? Type431 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageOutpaintingResponse2? Type432 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.GenaiSmartBackgroundResponseDataItem>? Type432 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiRemoveObjectResponse? Type433 { get; set; }
+        public global::Picsart.GenaiSmartBackgroundResponseDataItem? Type433 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiRemoveObjectResponseData? Type434 { get; set; }
+        public global::Picsart.GenaiSmartBackgroundResponse2? Type434 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiRemoveObjectResponse2? Type435 { get; set; }
+        public global::Picsart.GenaiExpandImageResponse? Type435 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiSmartBackgroundResponse? Type436 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.GenaiExpandImageResponseDataItem>? Type436 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.GenaiSmartBackgroundResponseDataItem>? Type437 { get; set; }
+        public global::Picsart.GenaiExpandImageResponseDataItem? Type437 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiSmartBackgroundResponseDataItem? Type438 { get; set; }
+        public global::Picsart.GenaiExpandImageResponse2? Type438 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiSmartBackgroundResponse2? Type439 { get; set; }
+        public global::Picsart.GenaiGenerateImageBleedResponse? Type439 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiExpandImageResponse? Type440 { get; set; }
+        public global::Picsart.GenaiGenerateImageBleedResponseData? Type440 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.GenaiExpandImageResponseDataItem>? Type441 { get; set; }
+        public global::Picsart.GenaiImageInpaintingGetresultResponse? Type441 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiExpandImageResponseDataItem? Type442 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.GenaiImageInpaintingGetresultResponseDataItem>? Type442 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiExpandImageResponse2? Type443 { get; set; }
+        public global::Picsart.GenaiImageInpaintingGetresultResponseDataItem? Type443 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiGenerateImageBleedResponse? Type444 { get; set; }
+        public global::Picsart.GenaiImageInpaintingGetresultResponse2? Type444 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiGenerateImageBleedResponseData? Type445 { get; set; }
+        public global::Picsart.GenaiText2videoResponse? Type445 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageInpaintingGetresultResponse? Type446 { get; set; }
+        public global::Picsart.GenaiText2videoResponseStatus? Type446 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.GenaiImageInpaintingGetresultResponseDataItem>? Type447 { get; set; }
+        public global::Picsart.GenaiImage2videoResponse? Type447 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageInpaintingGetresultResponseDataItem? Type448 { get; set; }
+        public global::Picsart.GenaiImage2videoResponseStatus? Type448 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImageInpaintingGetresultResponse2? Type449 { get; set; }
+        public global::Picsart.GenaiText2videoGetresultResponse? Type449 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2videoResponse? Type450 { get; set; }
+        public global::Picsart.GenaiText2videoGetresultResponseData? Type450 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2videoResponseStatus? Type451 { get; set; }
+        public global::Picsart.GenaiText2videoGetresultResponse2? Type451 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImage2videoResponse? Type452 { get; set; }
+        public global::Picsart.GenaiText2videoGetresultResponseStatus? Type452 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiImage2videoResponseStatus? Type453 { get; set; }
+        public global::Picsart.GenaiText2speechResponse? Type453 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2videoGetresultResponse? Type454 { get; set; }
+        public global::Picsart.GenaiText2speechResponseStatus? Type454 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2videoGetresultResponseData? Type455 { get; set; }
+        public global::Picsart.GenaiText2soundResponse? Type455 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2videoGetresultResponse2? Type456 { get; set; }
+        public global::Picsart.GenaiText2soundResponseStatus? Type456 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2videoGetresultResponseStatus? Type457 { get; set; }
+        public global::Picsart.GenaiText2audioGetresultResponse? Type457 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2speechResponse? Type458 { get; set; }
+        public global::Picsart.GenaiText2audioGetresultResponseData? Type458 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2speechResponseStatus? Type459 { get; set; }
+        public global::Picsart.GenaiText2audioGetresultResponse2? Type459 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2soundResponse? Type460 { get; set; }
+        public global::Picsart.GenaiText2audioGetresultResponseStatus? Type460 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2soundResponseStatus? Type461 { get; set; }
+        public global::Picsart.GenaiCreditsBalanceResponse? Type461 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2audioGetresultResponse? Type462 { get; set; }
+        public global::Picsart.VdExportReplayResponse? Type462 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2audioGetresultResponseData? Type463 { get; set; }
+        public global::Picsart.VdExportReplayGetresultResponse? Type463 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2audioGetresultResponse2? Type464 { get; set; }
+        public global::Picsart.VdExportReplayGetresultResponseData? Type464 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiText2audioGetresultResponseStatus? Type465 { get; set; }
+        public global::Picsart.VdExportReplayGetresultResponse2? Type465 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.GenaiCreditsBalanceResponse? Type466 { get; set; }
+        public global::Picsart.VdDescribeVariableDataContentResponse? Type466 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdExportReplayResponse? Type467 { get; set; }
+        public global::Picsart.VdDescribeVariableDataContentResponseData? Type467 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdExportReplayGetresultResponse? Type468 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.VdDescribeVariableDataContentResponseDataTag>? Type468 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdExportReplayGetresultResponseData? Type469 { get; set; }
+        public global::Picsart.VdDescribeVariableDataContentResponseDataTag? Type469 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdExportReplayGetresultResponse2? Type470 { get; set; }
+        public global::Picsart.VdDescribeVariableDataContentResponseDataTagType? Type470 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdDescribeVariableDataContentResponse? Type471 { get; set; }
+        public global::Picsart.VdExportVariableDataContentResponse? Type471 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdDescribeVariableDataContentResponseData? Type472 { get; set; }
+        public global::Picsart.VdExportVariableDataContentGetresultResponse? Type472 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.VdDescribeVariableDataContentResponseDataTag>? Type473 { get; set; }
+        public global::System.Collections.Generic.IList<global::Picsart.VdExportVariableDataContentGetresultResponseDataItem>? Type473 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdDescribeVariableDataContentResponseDataTag? Type474 { get; set; }
+        public global::Picsart.VdExportVariableDataContentGetresultResponseDataItem? Type474 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdDescribeVariableDataContentResponseDataTagType? Type475 { get; set; }
+        public global::Picsart.VdExportVariableDataContentGetresultResponse2? Type475 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Picsart.VdExportVariableDataContentResponse? Type476 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Picsart.VdExportVariableDataContentGetresultResponse? Type477 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::Picsart.VdExportVariableDataContentGetresultResponseDataItem>? Type478 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Picsart.VdExportVariableDataContentGetresultResponseDataItem? Type479 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Picsart.VdExportVariableDataContentGetresultResponse2? Type480 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Picsart.VdCreditsBalanceResponse? Type481 { get; set; }
+        public global::Picsart.VdCreditsBalanceResponse? Type476 { get; set; }
 
         /// <summary>
         ///
