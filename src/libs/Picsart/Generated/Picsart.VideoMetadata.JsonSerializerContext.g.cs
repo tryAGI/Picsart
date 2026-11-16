@@ -38,9 +38,8 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailResponseStatus), TypeInfoPropertyName = "VideoSetThumbnailResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponseData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus), TypeInfoPropertyName = "VideoSetThumbnailGetresultResponseStatus2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus), TypeInfoPropertyName = "VideoSetThumbnailGetresultResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2), TypeInfoPropertyName = "VideoSetThumbnailGetresultResponseStatus22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoVideoGetThumbnailParametersSource?), TypeInfoPropertyName = "NullableVideoVideoGetThumbnailParametersSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
@@ -49,8 +48,7 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoMetadataResponseStatus?), TypeInfoPropertyName = "NullableVideoMetadataResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetThumbnailResponseStatus?), TypeInfoPropertyName = "NullableVideoGetThumbnailResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailResponseStatus?), TypeInfoPropertyName = "NullableVideoSetThumbnailResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus?), TypeInfoPropertyName = "NullableVideoSetThumbnailGetresultResponseStatus2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2?), TypeInfoPropertyName = "NullableVideoSetThumbnailGetresultResponseStatus22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus?), TypeInfoPropertyName = "NullableVideoSetThumbnailGetresultResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Picsart.VideoGetThumbnailResponseDataItem>))]
     internal sealed partial class VideoMetadataSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -142,11 +140,7 @@ namespace Picsart
 
                     || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus)
 
-                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus?)
-
-                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2)
-
-                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2?);
+                    || typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -201,16 +195,6 @@ namespace Picsart
                 if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus?))
                 {
                     return new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2))
-                {
-                    return new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoSetThumbnailGetresultResponseStatus2?))
-                {
-                    return new global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2NullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

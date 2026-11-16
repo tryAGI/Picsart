@@ -28,17 +28,15 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioResponseStatus), TypeInfoPropertyName = "VideoTranscribeAudioResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponseData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus), TypeInfoPropertyName = "VideoTranscribeAudioGetresultResponseStatus2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus), TypeInfoPropertyName = "VideoTranscribeAudioGetresultResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2), TypeInfoPropertyName = "VideoTranscribeAudioGetresultResponseStatus22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeParametersLanguage?), TypeInfoPropertyName = "NullableVideoTranscribeParametersLanguage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeParametersFormat?), TypeInfoPropertyName = "NullableVideoTranscribeParametersFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeParametersGranularity?), TypeInfoPropertyName = "NullableVideoTranscribeParametersGranularity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.AllOf<global::Picsart.VideoTranscribeFileParameters, global::Picsart.VideoTranscribeParameters>?), TypeInfoPropertyName = "NullableAllOfVideoTranscribeFileParametersVideoTranscribeParameters2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioResponseStatus?), TypeInfoPropertyName = "NullableVideoTranscribeAudioResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus?), TypeInfoPropertyName = "NullableVideoTranscribeAudioGetresultResponseStatus2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2?), TypeInfoPropertyName = "NullableVideoTranscribeAudioGetresultResponseStatus22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus?), TypeInfoPropertyName = "NullableVideoTranscribeAudioGetresultResponseStatus2")]
     internal sealed partial class VideoTranscriptionsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -127,11 +125,7 @@ namespace Picsart
 
                     || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus)
 
-                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus?)
-
-                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2)
-
-                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2?);
+                    || typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -186,16 +180,6 @@ namespace Picsart
                 if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus?))
                 {
                     return new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2))
-                {
-                    return new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoTranscribeAudioGetresultResponseStatus2?))
-                {
-                    return new global::Picsart.JsonConverters.VideoTranscribeAudioGetresultResponseStatus2NullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

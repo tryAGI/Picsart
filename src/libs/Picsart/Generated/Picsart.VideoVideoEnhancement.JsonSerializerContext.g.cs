@@ -23,13 +23,11 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsResponseStatus), TypeInfoPropertyName = "VideoUpscaleFpsResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponseData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus), TypeInfoPropertyName = "VideoUpscaleFpsGetresultResponseStatus2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus), TypeInfoPropertyName = "VideoUpscaleFpsGetresultResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2), TypeInfoPropertyName = "VideoUpscaleFpsGetresultResponseStatus22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsResponseStatus?), TypeInfoPropertyName = "NullableVideoUpscaleFpsResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus?), TypeInfoPropertyName = "NullableVideoUpscaleFpsGetresultResponseStatus2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2?), TypeInfoPropertyName = "NullableVideoUpscaleFpsGetresultResponseStatus22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus?), TypeInfoPropertyName = "NullableVideoUpscaleFpsGetresultResponseStatus2")]
     internal sealed partial class VideoVideoEnhancementSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -105,11 +103,7 @@ namespace Picsart
 
                     || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus)
 
-                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus?)
-
-                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2)
-
-                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2?);
+                    || typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -134,16 +128,6 @@ namespace Picsart
                 if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus?))
                 {
                     return new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2))
-                {
-                    return new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoUpscaleFpsGetresultResponseStatus2?))
-                {
-                    return new global::Picsart.JsonConverters.VideoUpscaleFpsGetresultResponseStatus2NullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

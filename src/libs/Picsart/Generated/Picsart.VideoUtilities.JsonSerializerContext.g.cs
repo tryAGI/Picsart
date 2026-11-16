@@ -22,23 +22,19 @@ namespace Picsart
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.Video401Error))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponseData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponseStatus), TypeInfoPropertyName = "VideoGetresultResponseStatus2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponseStatus), TypeInfoPropertyName = "VideoGetresultResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponseStatus2), TypeInfoPropertyName = "VideoGetresultResponseStatus22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponseData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponseStatus), TypeInfoPropertyName = "VideoGetaudioresultResponseStatus2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponseStatus), TypeInfoPropertyName = "VideoGetaudioresultResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponseStatus2), TypeInfoPropertyName = "VideoGetaudioresultResponseStatus22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUploadResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUploadResponseData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUploadResponseStatus), TypeInfoPropertyName = "VideoUploadResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoCreditsBalanceResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponseStatus?), TypeInfoPropertyName = "NullableVideoGetresultResponseStatus2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponseStatus2?), TypeInfoPropertyName = "NullableVideoGetresultResponseStatus22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponseStatus?), TypeInfoPropertyName = "NullableVideoGetaudioresultResponseStatus2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponseStatus2?), TypeInfoPropertyName = "NullableVideoGetaudioresultResponseStatus22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetresultResponseStatus?), TypeInfoPropertyName = "NullableVideoGetresultResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoGetaudioresultResponseStatus?), TypeInfoPropertyName = "NullableVideoGetaudioresultResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Picsart.VideoUploadResponseStatus?), TypeInfoPropertyName = "NullableVideoUploadResponseStatus2")]
     internal sealed partial class VideoUtilitiesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
@@ -113,17 +109,9 @@ namespace Picsart
 
                     || typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus?)
 
-                    || typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus2)
-
-                    || typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus2?)
-
                     || typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus)
 
                     || typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus?)
-
-                    || typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus2)
-
-                    || typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus2?)
 
                     || typeToConvert == typeof(global::Picsart.VideoUploadResponseStatus)
 
@@ -144,16 +132,6 @@ namespace Picsart
                     return new global::Picsart.JsonConverters.VideoGetresultResponseStatusNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus2))
-                {
-                    return new global::Picsart.JsonConverters.VideoGetresultResponseStatus2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoGetresultResponseStatus2?))
-                {
-                    return new global::Picsart.JsonConverters.VideoGetresultResponseStatus2NullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus))
                 {
                     return new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusJsonConverter();
@@ -162,16 +140,6 @@ namespace Picsart
                 if (typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus?))
                 {
                     return new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus2))
-                {
-                    return new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Picsart.VideoGetaudioresultResponseStatus2?))
-                {
-                    return new global::Picsart.JsonConverters.VideoGetaudioresultResponseStatus2NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Picsart.VideoUploadResponseStatus))

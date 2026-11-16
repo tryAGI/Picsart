@@ -18,8 +18,8 @@ namespace Picsart
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatus2JsonConverter))]
-        public global::Picsart.VideoSetThumbnailGetresultResponseStatus2? Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Picsart.JsonConverters.VideoSetThumbnailGetresultResponseStatusJsonConverter))]
+        public global::Picsart.VideoSetThumbnailGetresultResponseStatus? Status { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,7 +37,7 @@ namespace Picsart
 #endif
         public VideoSetThumbnailGetresultResponse2(
             string? transactionId,
-            global::Picsart.VideoSetThumbnailGetresultResponseStatus2? status)
+            global::Picsart.VideoSetThumbnailGetresultResponseStatus? status)
         {
             this.TransactionId = transactionId;
             this.Status = status;
