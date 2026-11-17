@@ -347,13 +347,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_400 = global::Picsart.GenAIError.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = __content_400 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_400, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_400 = global::Picsart.GenAIError.FromJson(__content_400, JsonSerializerContext);
+                                        __value_400 = __content_400 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_400, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -364,7 +364,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseObject: __value_400,
@@ -384,13 +384,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_401 = global::Picsart.GenAIError.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_401 = global::Picsart.GenAIError.FromJson(__content_401, JsonSerializerContext);
+                                        __value_401 = __content_401 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -401,7 +401,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseObject: __value_401,
@@ -421,13 +421,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_402 = global::Picsart.GenAIError.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = __content_402 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_402, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_402 = global::Picsart.GenAIError.FromJson(__content_402, JsonSerializerContext);
+                                        __value_402 = __content_402 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_402, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -438,7 +438,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_402 is { Length: > 0 } ? __content_402 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_402,
                                     responseBody: __content_402,
                                     responseObject: __value_402,
@@ -458,13 +458,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_403 = global::Picsart.GenAIError.FromJson(__content_403, JsonSerializerContext);
+                                        __value_403 = __content_403 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_403, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_403 = global::Picsart.GenAIError.FromJson(__content_403, JsonSerializerContext);
+                                        __value_403 = __content_403 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_403, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -475,7 +475,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseObject: __value_403,
@@ -495,13 +495,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_404 = global::Picsart.GenAIError.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = __content_404 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_404, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_404 = global::Picsart.GenAIError.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = __content_404 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_404, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -512,7 +512,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseObject: __value_404,
@@ -532,13 +532,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_405 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_405 = global::Picsart.GenAIError.FromJson(__content_405, JsonSerializerContext);
+                                        __value_405 = __content_405 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_405, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_405 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_405 = global::Picsart.GenAIError.FromJson(__content_405, JsonSerializerContext);
+                                        __value_405 = __content_405 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_405, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -549,7 +549,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_405 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_405 is { Length: > 0 } ? __content_405 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_405,
                                     responseBody: __content_405,
                                     responseObject: __value_405,
@@ -569,13 +569,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_413 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_413 = global::Picsart.GenAIError.FromJson(__content_413, JsonSerializerContext);
+                                        __value_413 = __content_413 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_413, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_413 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_413 = global::Picsart.GenAIError.FromJson(__content_413, JsonSerializerContext);
+                                        __value_413 = __content_413 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_413, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -586,7 +586,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_413 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_413 is { Length: > 0 } ? __content_413 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_413,
                                     responseBody: __content_413,
                                     responseObject: __value_413,
@@ -606,13 +606,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_415 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_415 = global::Picsart.GenAIError.FromJson(__content_415, JsonSerializerContext);
+                                        __value_415 = __content_415 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_415, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_415 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_415 = global::Picsart.GenAIError.FromJson(__content_415, JsonSerializerContext);
+                                        __value_415 = __content_415 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_415, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -623,7 +623,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_415 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_415 is { Length: > 0 } ? __content_415 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_415,
                                     responseBody: __content_415,
                                     responseObject: __value_415,
@@ -643,13 +643,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_429 = global::Picsart.GenAIError.FromJson(__content_429, JsonSerializerContext);
+                                        __value_429 = __content_429 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_429, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_429 = global::Picsart.GenAIError.FromJson(__content_429, JsonSerializerContext);
+                                        __value_429 = __content_429 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_429, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -660,7 +660,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_429 is { Length: > 0 } ? __content_429 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_429,
                                     responseBody: __content_429,
                                     responseObject: __value_429,
@@ -680,13 +680,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_431 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_431 = global::Picsart.GenAIError.FromJson(__content_431, JsonSerializerContext);
+                                        __value_431 = __content_431 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_431, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_431 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_431 = global::Picsart.GenAIError.FromJson(__content_431, JsonSerializerContext);
+                                        __value_431 = __content_431 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_431, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -697,7 +697,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_431 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_431 is { Length: > 0 } ? __content_431 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_431,
                                     responseBody: __content_431,
                                     responseObject: __value_431,
@@ -717,13 +717,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_500 = global::Picsart.GenAIError.FromJson(__content_500, JsonSerializerContext);
+                                        __value_500 = __content_500 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_500, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_500 = global::Picsart.GenAIError.FromJson(__content_500, JsonSerializerContext);
+                                        __value_500 = __content_500 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_500, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -734,7 +734,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_500 is { Length: > 0 } ? __content_500 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
                                     responseBody: __content_500,
                                     responseObject: __value_500,
@@ -754,13 +754,13 @@ namespace Picsart
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_503 = global::Picsart.GenAIError.FromJson(__content_503, JsonSerializerContext);
+                                        __value_503 = __content_503 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_503, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_503 = global::Picsart.GenAIError.FromJson(__content_503, JsonSerializerContext);
+                                        __value_503 = __content_503 is not { Length: > 0 } ? null : global::Picsart.GenAIError.FromJson(__content_503, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -771,7 +771,7 @@ namespace Picsart
 
                                 throw global::Picsart.ApiException<global::Picsart.GenAIError>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_503 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_503 is { Length: > 0 } ? __content_503 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_503,
                                     responseBody: __content_503,
                                     responseObject: __value_503,
@@ -814,7 +814,7 @@ namespace Picsart
                                 {
                                     throw global::Picsart.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -859,7 +859,7 @@ namespace Picsart
 
                                     throw global::Picsart.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
